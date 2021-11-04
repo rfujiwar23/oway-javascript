@@ -42,3 +42,14 @@ var vm = new Vue({
     ]
   }
 });
+
+var vm = new Vue({
+  el: '#curly',
+  data: {
+    curlyItems: [
+      {productNameJP: 'カーリー　ヘアバス 240ml', productNameENG: 'curly hair bath 240ml', imageSource: '../../image/individual/curly_hair_bath_240ml.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/26?salon_id=5'},
+      {productNameJP: 'カーリー　ヘアマスク 150ml', productNameENG: 'curly hair mask 150ml', imageSource: '../../image/individual/curly_hair_mask_150ml.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/28?salon_id=5'},
+      {productNameJP: 'カーリー　ポーション 240ml', productNameENG: 'curly potion 240ml', imageSource: '../../image/individual/curly_potion.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/30?salon_id=5'}
+    ]
+  }
+});
