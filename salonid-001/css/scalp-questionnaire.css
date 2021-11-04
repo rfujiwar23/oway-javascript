@@ -1,0 +1,129 @@
+body {
+  background:rgba(246,246,246, 0.8);
+  /*background:red;*/
+  background:url('../image/sect-bg/021-scalp-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height:100vh;
+}
+
+.no-gutters {
+   margin-right: 0;
+   margin-left: 0;
+}
+ .no-gutters > [class*="col-"] {
+   padding-right: 0;
+   padding-left: 0;
+}
+
+
+section.q-s {
+  margin: 2vh auto;
+  border-radius:3px;
+  background-color:white;
+  padding:30px 20px;
+  box-shadow:1px 3px 20px rgb(220,220,220);
+  width: 90%;
+  border:1px solid rgb(220,220,220);
+
+}
+
+.navbar .logo {
+  width: 200px;
+}
+
+
+button {
+  width:100%;
+  padding:10px;
+}
+
+.banner {
+  background: rgb(146,174,29);
+  background: linear-gradient(180deg, rgba(146,174,29,1) 0%, rgba(236,250,177,1) 100%);
+  padding:3vh 0;
+  /*margin-top:2vh;*/
+}
+
+.banner h2, .banner p {
+  text-align:center;
+}
+
+
+.container {
+  background:rgb(255,255,255);
+  margin:4vh auto;
+}
+
+.product {
+  margin:3vh auto;
+}
+
+
+
+.footer {
+  background:#1a2228;
+  width:100%;
+  bottom:0;
+}
+
+.footer p a, .footer p {
+  color:white;
+  font-size:0.8em;
+  text-align: right;
+  padding-right:30px;
+}
+
+.footer p a {
+  color:white;
+  text-decoration: none;
+}
+
+.footer p a:hover {
+  text-decoration: underline;
+}
+
+/*modal content*/
+.modal-content {
+  padding:20px;
+}
+
+.modal-content h2 {
+  text-align: center;
+}
+
+.modal-content h3 {
+  font-size:1em;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight:normal;
+}
+
+.modal-content p.button {
+  width: 100%;
+}
+
+.go-back-to-index {
+  border:1px solid #9a9a9a;
+  background:rgba(255,255,255,0.8);
+  text-align: center;
+  padding:10px 0;
+  border-radius:5px;
+  margin-bottom:5vh;
+}
+
+.go-back-to-index a {
+  text-decoration: none;
+  color: #000;
+}
+
+.go-back-to-index a span {
+  font-size:0.8em;
+}
+
+.go-back-to-index:hover {
+  background: linear-gradient(180deg, rgba(217,193,57,1) 0%, rgba(236,232,212,1) 50%);
+}
+
+.go-back-to-index a:hover {
+  font-weight:bold;
+  color:#000;
+}

@@ -1,0 +1,577 @@
+$primary-white: #fff !default;
+$charcoal: #434343 !default;
+$trolley-grey: #808080 !default;
+$nobel: #9f9f9f !default;
+
+
+body {
+  background:$primary-white;
+  overflow-x: hidden;
+}
+
+.nav-logo {
+  width:200px;
+  height:40px;
+}
+
+.jumbotron {
+  padding-top: 56.25%;
+  background:url('../img/top-img.png') no-repeat;
+  // background:url('../img/top-img2.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom:0;
+  position:relative;
+  .logo {
+    position:absolute;
+    top:12%;
+    left:10px;
+    p {
+      font-weight:bold;
+      font-size:2em;
+      text-align:center;
+    }
+  }
+}
+
+.sect {
+  h2 {
+    font-size:2em;
+    text-align:center;
+    color:$primary-white;
+  }
+  h4 {
+    font-size:1em;
+    text-align:center;
+    color:$primary-white;
+  }
+
+  .about-sunway {
+    margin:3vh auto;
+    padding:20px 30px;
+    p {
+      font-size:18px;
+      color:$primary-white;
+      line-height:2em;
+    }
+  }
+  .patented-test {
+    background-color:$primary-white;
+    padding:30px 20px;
+    border-radius:10px;
+    box-shadow:0 3px 6px rgba(0,0,0,.67);
+  }
+  .characteristics {
+    background:$primary-white;
+    text-align:center;
+    padding:20px 10px;
+    h5 {
+      text-transform: uppercase;
+      font-size:20px;
+    }
+    h6 {
+      font-size:16px;
+      font-weight:bold;
+      margin-top:20px;
+    }
+    p {
+      // width:80%;
+      margin:30px auto;
+      font-size:14px;
+      line-height:2em;
+      text-align:left;
+    }
+  }
+}
+
+.pt {
+  background:url('../img/img-orto.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom:-40px;
+  padding:5vh 0;
+  .sect {
+    h2 {
+      color:rgb(0,0,0);
+      font-weight:bold;
+    }
+    .about-oway {
+      background:rgba(255,255,255,0.67);
+      border-radius:5px;
+      box-shadow:3px 6px 6px rgba(50,50,50,0.7);
+      line-height:2em;
+    }
+  }
+}
+
+.pt1 {
+  background:$charcoal;
+  padding:4vh 0;
+}
+
+.pt2 {
+  background:$trolley-grey;
+  padding:4vh 0;
+  .sect {
+    .char {
+      padding:3vh;
+      border:rgba(80,80,80,0.5) 1px solid;
+      height:calc(100vh / 3);
+      max-height:500px;
+      margin-top:auto;
+      margin-bottom:auto;
+      .content {
+        background:rgba(255,255,255,0.8);
+        box-shadow:1px 3px 6px rgba(0,0,0,0.37);
+        height:calc(100vh / 4);
+        height:100%;
+        max-height:320px;
+        h3 {
+          // color:red;
+
+          text-align:center;
+          font-size:1.25em;
+          font-weight:bold;
+          padding-top:20px;
+        }
+        p {
+          font-size:0.85em;
+          line-height:2em;
+          // margin-top:2vh;
+          padding:0 10px;
+        }
+      }
+    }
+    .uv-sun {
+      background:url('../img/img018.jpg') no-repeat;
+      background-size: cover;
+      background-position: left top;
+    }
+    .preservation-free {
+      background:url('../img/img012.jpg') no-repeat;
+      background-position: right top;
+      background-size:cover;
+    }
+    .nickel-test {
+      background:url('../img/img014.jpg') no-repeat;
+      background-position: center;
+      background-size:cover;
+    }
+    .dermatology-test {
+      background:url('../img/bg001.png') no-repeat;
+      background-position: center;
+      background-size:cover;
+    }
+  }
+}
+
+.pt3 {
+  background:$nobel;
+  padding:4vh 0;
+  .sect {
+    margin:0 40px;
+    .preservative-free {
+      margin:5vh auto;
+      // text-align:center;
+      // background:red;
+      h2 {
+        font-size:32px;
+      }
+      .center-text {
+        margin:0 auto;
+      }
+      p {
+        font-size:16px;
+        color:$primary-white;
+        font-weight:bold;
+        margin-top:2vh;
+        line-height:2em;
+      }
+    }
+  }
+}
+
+
+.pt4 {
+  background:#61696e;
+  padding:4vh 0;
+  
+  .instructions {
+    margin:3vh auto;
+    color:$primary-white;
+    // background:rgba($color: #ffffff, $alpha: 0.6);
+    h3 {
+      margin-top:3vh;
+      font-size:20px;
+      padding-bottom:3px;
+      border-bottom:1px solid $primary-white;
+      span {
+        font-weight:bold;
+      }
+    }
+    p {
+      font-size:16px;
+      line-height:2em;
+      margin-left:20px;
+      margin-right:20px;
+    }
+
+    .instruction-product {
+      // background:$primary-white;
+    }
+
+
+  }
+}
+
+
+
+.pt5 {
+  background:$primary-white;
+  padding:4vh 0;
+  .sect {
+    h2 {
+      color:black;
+    }
+    h4 {
+      text-align:center;
+      color:black;
+    }
+    .owl-carousel {
+      .owl-stage {
+        display: flex;
+      }
+      .owl-item {
+        display: flex;
+        flex: 1 0 auto;
+      }
+      a {
+        color: #000;
+        text-decoration:none;
+          .product {
+          display: flex;
+          flex-direction: column;
+          margin: 0 15px;
+          text-align: center;
+          background:$primary-white;
+          .caption {
+            display: flex;
+            flex: 1 0 auto;
+            flex-direction: column;
+            .flex-text {
+              flex-grow: 1;
+            }
+          }
+          h3 {
+            text-align:center;
+            margin-top:3vh;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: normal;
+            font-size:24px;
+          }
+          h4 {
+            text-align:center;
+            color:#000;
+          }
+          h6 {
+            span {
+              font-weight:bold;
+            }
+          }
+          p.price {
+            color:#b51423;
+            strong {
+              font-size:2.5em;
+            }
+          }
+          p.with-tax {
+            font-size:16px;
+            span {
+              font-size:2em;
+              font-weight:bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.match {
+  z-index: 999;
+  position:fixed;
+  top:80px;
+  right:3%;
+  padding:15px 20px;
+  background:$nobel;
+  font-weight:bold;
+  border-radius:10px;
+  box-shadow:2px 3px 6px $charcoal;
+  a {
+    text-shadow:1px 1px 1px $charcoal;
+    color:$primary-white;
+  }
+}
+
+
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    background: white;
+    border: none;
+}
+
+
+
+
+
+.card {
+  background-color: transparent;
+  border: transparent;
+  .card-text-area {
+    color: white;
+  }
+}
+
+footer {
+  background: $primary-white;
+  .footer-contents {
+    text-align: center;
+    font-size:0.9em;
+    p {
+      color:$charcoal;
+      a {
+        padding:0 10px;
+        color:$charcoal;
+        text-decoration: none;
+      }
+      a:hover {
+        padding-bottom:3px;
+        font-weight:bold;
+        border-bottom:1px solid $charcoal;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width:992px) {
+  .disp-product {
+    margin:20px auto;
+  }
+
+  .pt2 {
+    padding:4vh 0;
+    .sect {
+      .char {
+        padding:20px;
+        border:rgba(80,80,80,0.5) 1px solid;
+        height:calc(100vh / 2);
+        max-height:350px;
+        .content {
+          background:rgba(255,255,255,0.8);
+          // height:calc(100vh / 3);
+          max-height:290px;
+          p {
+            font-size:0.8em;
+          }
+        }
+      }
+    }
+  }
+
+  .pt5 {
+    // background:$trolley-grey;
+    padding:4vh 0;
+    .sect {
+      .owl-carousel {
+        .product {
+          margin: 0 10px;
+          h3 {
+            font-size:22px;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+@media (max-width:768px) {
+  .pt2 {
+    padding:4vh 0;
+    .sect {
+      .char {
+        padding:20px;
+        border:rgba(80,80,80,0.5) 1px solid;
+        height:calc(100vh / 2);
+        max-height:420px;
+        .content {
+          background:rgba(255,255,255,0.8);
+          // height:calc(100vh / 3);
+          height:100%;
+          max-height:280px;
+          h3 {
+            padding-top:20px;
+          }
+          p {
+            font-size:0.8em;
+          }
+        }
+      }
+    }
+  }
+
+  .pt5 {
+    .sect {
+      .products {
+        width:100%;
+        max-width:768px;
+          .disp-product {
+          margin:20px auto;
+          }
+      }
+    }
+  }
+
+  .jumbotron {
+    .logo {
+      position:absolute;
+      top:15%;
+      left:10px;
+      width:15%;
+      text-align:center;
+      p {
+        font-weight:bold;
+        font-size:1em;
+      }
+    }
+  }
+}
+
+
+
+
+
+@media (max-width:576px) {
+  .disp-product {
+    margin:20px auto;
+  }
+
+  .pt1 {
+    padding:3vh 0 0 0;
+  }
+
+  .pt2 {
+    padding:2vh 0;
+    .sect {
+
+      .char {
+        // margin:3vh;
+        padding:20px;
+        border:rgba(80,80,80,0.5) 1px solid;
+        height:calc(100vh / 2);
+        max-height:400px;
+        .content {
+          background:rgba(255,255,255,0.8);
+          height:calc(100vh / 3);
+          h3 {
+            padding-top:20px;
+          }
+          p {
+            font-size:0.7em;
+          }
+        }
+      }
+    }
+  }
+
+  .pt4 {
+    .instructions {
+      h3 {
+        font-size:1em;
+      }
+      p {
+        font-size:0.9em;
+      }
+    }
+  }
+
+
+  .jumbotron {
+    .logo {
+      position:absolute;
+      top:25%;
+      left:5px;
+      width:50%;
+      text-align:center;
+      p {
+        font-weight:bold;
+        font-size:1em;
+      }
+    }
+  }
+
+  .match {
+    a {
+      font-size:12px;
+    }
+  }
+
+  .sect {
+    .about-sunway {
+      padding:20px 15px;
+      margin:0;
+      p {
+        font-size:0.9em;
+      }
+    }
+  }
+
+  footer {
+  background: $primary-white;
+    .footer-contents {
+      text-align: center;
+      font-size:0.7em;
+      p {
+        a {
+          padding:0 5px;
+        }
+      }
+    }
+  }
+
+
+}
+
+
+@media (max-width:375px) {
+  .pt1 {
+    padding:2vh 0;
+  }
+
+  .sect {
+    .about-sunway {
+      padding:20px 15px;
+      p {
+        font-size:0.8em;
+      }
+    }
+  }
+
+  .pt4 {
+    .instructions {
+      h3 {
+        font-size:1em;
+      }
+      p {
+        font-size:0.9em;
+      }
+    }
+  }
+
+}
+

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+<link rel="manifest" href="../../favicon/site.webmanifest">
+<link rel="stylesheet" href="../../css/reset.css">
+<link rel="stylesheet" href="../../css/hair-care-questionnaire.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<title>【公式】OWAY - IFING BEAUTY ONLINE ｜ヘアケア アンケート</title>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+
+  $("#result").click(function(){
+
+    // Color
+    // alert("You chose "+ colorValue);
+      var colorValue = $("input[name=hairColoring]:checked").val();
+        if(colorValue == "yes-color"){
+        $(".yes-color").show();
+      } else {
+        $(".yes-color").hide();
+      }
+
+
+    // Perm
+      var permValue = $("input[name=frequency-of-perm]:checked").val();
+        if (permValue == "yes-perm") {
+          $(".yes-perm").show();
+        }else {
+          $(".yes-perm").hide();
+      }
+
+      // 複数選択可
+      // $('.any-problems').on("change",function() {
+      //   $('#'+$(this).attr('value')).show(this.checked);
+      // }).change();
+      $('.any-problems').on("change",function() {
+        $('.'+$(this).attr('value')).toggle(this.checked);
+      }).change();
+
+
+      // $('.any-problems').on(function(){
+      //   var inputValue = $(this).attr("value");
+      //   $("#" + inputValue).toggle();
+      // });
+
+
+
+    });
+  });
+</script>
+
+
+
+
+
+
+
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-dark bg-dark">
+            <a href="../../index.html">
+              <img src="../../image/logo-white.svg" alt="IFing Beauty Logo" class="logo">
+            </a>
+      </nav>
+
+  <div class="container-fluid">
+
+  <div class="row">
+    <div class="col-lg-7 col-md-7 col-sm-12 left">
+      <div class="questionnaire">
+      <section class="intro">
+        <h2>OWAY ヘアケア</h2>
+        <h3>WEBカウンセリングへようこそ</h3>
+        <p>OWAYの商品をはじめてご使用されるお客様にお悩みやご希望にラインナップをご提案させていただきます。</p>
+      </section>
+
+      <!-- Not part of the js/jQuery coding -->
+      <section class="hair-thickness">
+      <h3>1. 髪の太さ</h3>
+        <div class="answers">
+          <label><input type="radio" class="thickness" name="thickness" > 細い</label>
+          <br>
+          <label><input type="radio" class="thickness" name="thickness" > やや細い</label>
+          <br>
+          <label><input type="radio" class="thickness" name="thickness" > 普通</label>
+          <br>
+          <label><input type="radio" class="thickness" name="thickness" > やや太い</label>
+          <br>
+          <label><input type="radio" class="thickness" name="thickness" > 太い</label>
+        </div>
+      </section>
+
+      <!-- A to J is not part of the code: Just K/L/M -->
+      <section>
+        <h3>2. 該当するお悩みを選択してください（複数可）</h3>
+        <div class="answers row">
+          <div class="col-md-4">
+          <label><input type="checkbox" name="multiple" value=""> 細い</label>
+          <br>
+          <label><input type="checkbox" name="multiple" value=""> 剛毛</label>
+          <br>
+          <label><input type="checkbox" name="multiple" value=""> 縮毛</label>
+          <br>
+          <label><input type="checkbox" name="multiple" value=""> うねり</label>
+          <br>
+          </div>
+          <div class="col-md-4">
+          <label><input type="checkbox" name="multiple" value=""> 広がる</label>
+          <br>
+          <label><input type="checkbox" name="multiple" value=""> パサつき</label>
+          <br>
+          <label><input type="checkbox" name="multiple" value=""> 切れ毛</label>
+          <br>
+          <label><input type="checkbox" name="multiple" value=""> 枝毛</label>
+          <br>
+          </div>
+          <div class="col-md-4">
+          <label><input type="checkbox" name="multiple" value=""> べたつき</label>
+          <br>
+          <label><input type="checkbox" name="multiple" value=""> ボリューム</label>
+          <br>
+          <label><input type="checkbox" name="multiple" class="any-problems" value="gray-hair"> 白髪</label>
+          <br>
+          <label><input type="checkbox" name="multiple" class="any-problems" value="uv-chlorine"> 紫外線・プール</label>
+          <br>
+          </div>
+          <!-- <div class="col-md-3">
+          <label><input type="checkbox" name="multiple" class="any-problems" value="uv-chlorine"> M. Salt/Pool Water</label>
+          </div> -->
+        </div>
+      </section>
+      <section class="haircolor">
+      <h3>3. カラーの頻度</h3>
+        <div class="answers">
+          <label><input type="radio" class="color" name="hairColoring" value="no" id="colorr"> 染めてない</label>
+          <br>
+          <label><input type="radio" class="color" name="hairColoring" value="yes-color"> ２週間に１回</label>
+          <br>
+          <label><input type="radio" class="color" name="hairColoring" value="yes-color"> １ヶ月に１回</label>
+          <br>
+          <label><input type="radio" class="color" name="hairColoring" value="yes-color"> ２〜３ヶ月に１回</label>
+          <br>
+          <label><input type="radio" class="color" name="hairColoring" value="yes-color"> それ以外</label>
+        </div>
+      </section>
+
+      <section class="perming">
+      <h3>4. パーマの頻度</h3>
+        <div class="answers">
+          <label><input type="radio" class="perm" name="frequency-of-perm" value="no"> かけてない</label>
+          <br>
+          <label><input type="radio" class="perm" name="frequency-of-perm" value="yes-perm"> １ヶ月に１回</label>
+          <br>
+          <label><input type="radio" class="perm" name="frequency-of-perm" value="yes-perm"> ２〜３ヶ月に１回</label>
+          <br>
+          <label><input type="radio" class="perm" name="frequency-of-perm" value="yes-perm"> 他</label>
+        </div>
+      </section>
+
+      <!-- Not part of the js/jQuery coding -->
+      <section class="frequency">
+      <h3>5. ヘアカラーやパーマの際に美容室のトリートメントを受けられますか</h3>
+        <div class="answers">
+          <label><input type="radio" class="frequency" name="frequency" > 不定期に受ける</label>
+          <br>
+          <label><input type="radio" class="frequency" name="frequency" > 毎回受ける</label>
+          <br>
+          <label><input type="radio" class="frequency" name="frequency" > 受けない</label>
+        </div>
+      </section>
+
+      <section class="personal-expectation">
+      <h3>6. 最近特に感じるお悩み (選択1つのみ)</h3>
+
+      <div class="answers row">
+        <div class="col-md-6">
+          <input type="radio" name="expectation" class="expectation" value="div1">
+            <label for="div1">クセを落ち着かせたい</label><br>
+          <input type="radio" name="expectation" class="expectation" value="div2">
+            <label for="div2">髪の健康を維持したい</label><br>
+          <input type="radio"  name="expectation" class="expectation" value="div3">
+            <label for="div3">髪も頭皮も潤わせたい</label><br>
+          <input type="radio" name="expectation" class="expectation" value="div4">
+            <label for="div4">カラーのダメージをケアしたい</label><br>
+          <input type="radio" name="expectation" class="expectation" value="div5">
+            <label for="div5">パーマのダメージケアをしたい</label><br>
+          <input type="radio" name="expectation" class="expectation" value="div6">
+            <label for="div6">髪のダメージをケアしたい</label><br>
+        </div>
+        <div class="col-md-6">
+          <input type="radio" name="expectation" class="expectation" value="div7">
+            <label for="div7">髪を強くしたい</label><br>
+          <input type="radio" name="expectation" class="expectation" value="div8">
+            <label for="div8">パーマやクセをきれいに見せたい</label><br>
+          <input type="radio" name="expectation" class="expectation" value="div9">
+            <label for="div9">ツヤが欲しい</label><br>
+          <input type="radio" name="expectation" class="expectation" value="div10">
+            <label for="div10">ボリュームが欲しい</label><br>
+          <input type="radio" name="expectation" class="expectation" value="div11">
+            <label for="div11">とにかくしっとりしたい</label><br>
+          <input type="radio" name="expectation" class="expectation" value="div12">
+            <label for="div12">まとまりを良くしたい</label>
+        </div>
+      </div>
+      </section>
+
+      <section>
+        <button onclick="discri()" type="button" id="result" class="btn btn-outline-primary">オススメ商品を見る</button>
+      </section>
+
+      <div class="disp-smartphone">
+        <div class="col-sm-8 offset-sm-2">
+          <p style="text-align: center;">検索結果は下に表示されます <i class="fas fa-long-arrow-alt-down"></i></p>
+        </div>
+      </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="col-lg-5 col-md-5 col-sm-12 right">
+
+      <div class="go-back-to-index">
+        <a href="../../index.html#CategoryModal" class="btn btn-warning">トップページへ戻る</a>
+      </div>
+
+      <h4>オススメ商品</h4>
+      <p class="notice">アンケート回答後「オススメ商品を見る」をクリックするとオススメ商品が出てきます
+      <br><strong class="red">PCのみ：商品ページに飛び、再度このページに戻って来た場合、「オススメ商品を見る」のボタンを押すとオススメ商品が表示されます</strong></p>
+      <div class="row inner">
+
+          <div class="box gray-hair">
+            <h2>白髪でお悩みの方に</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <h4>H Blonde Hair Bath</h4>
+                <a href="#"><img src="../../image/product/hblonde.jpg" alt="Hblonde" class="img-fluid"></a>
+              </div>
+              <div class="col-md-6">
+                <h4>Silver Steel Hair Bath</h4>
+                <a href="https://ifing-beauty.com/products/detail/108"><img src="../../image/product_men/007_silver-steel-hair-bath.png" alt="Silver Steel Hair Bath" class="img-fluid"></a>
+              </div>
+            </div>
+          </div>
+          <div class="box uv-chlorine col-md-6">
+            <h2>紫外線・塩素でお悩みの方に</h2>
+            <h4>sunway</h4>
+            <a href="https://ifing-beauty.com/products/list?category_id=21"><img src="../../image/product/prod001-sunway.jpg" alt="sunway UVヘアケア" class="img-fluid"></a>
+          </div>
+          <div class="yes-color box col-md-6">
+            <h2>カラーでのお悩みの方に</h2>
+            <h4>colorUp</h4>
+            <a href="https://ifing-beauty.com/products/list?category_id=29"><img src="../../image/product/prod002-colorUp.jpg" alt="colorUp カラープロテクション" class="img-fluid"></a>
+          </div>
+          <div class="yes-perm box col-md-6">
+            <h2>パーマでのお悩みの方に</h2>
+            <h4>beCurly</h4>
+            <a href="https://ifing-beauty.com/products/list?category_id=31"><img src="../../image/product/prod003-beCurly.jpg" alt="beCurly カーリー ヘア" class="img-fluid"></a>
+          </div>
+          <div id="div1" class="product col-md-6">
+            <h2>クセを落ち着かせるために</h2>
+            <h4>silk'n glow</h4>
+            <a href="https://ifing-beauty.com/products/list?category_id=33"><img src="../../image/product/prod004-silkglow.jpg" alt="silk'n glow シルク アンド グロー" class="img-fluid"></a>
+          </div>
+          <div id="div2" class="product col-md-6">
+            <h2>髪の健康を維持するために</h2>
+            <h4>dailyAct</h4>
+            <a href="https://ifing-beauty.com/products/list?category_id=26"><img src="../../image/product/prod005-dailyAct.jpg" alt="dailyAct デイリーユーズ" class="img-fluid"></a>
+          </div>
+          <div id="div3" class="product col-md-6">
+            <h2>髪も頭皮もうるわせるために</h2>
+            <h4>moisturizing</h4>
+            <a href="https://ifing-beauty.com/products/list?category_id=28"><img src="../../image/product/prod006-moisturizing.jpg" alt="moisturizing モイスト" class="img-fluid"></a>
+          </div>
+          <div id="div4" class="product col-md-6">
+            <h2>カラーでのお悩みの方に</h2>
+            <h4>colorUp</h4>
+            <a href="https://ifing-beauty.com/products/list?category_id=29"><img src="../../image/product/prod002-colorUp.jpg" alt="colorUp カラープロテクション" class="img-fluid"></a>
+          </div>
+          <div id="div5" class="product col-md-6">
+            <h2>パーマでのお悩みの方に</h2>
+            <h4>beCurly</h4>
+            <a href="https://ifing-beauty.com/products/list?category_id=31"><img src="../../image/product/prod003-beCurly.jpg" alt="beCurly カーリー" class="img-fluid"></a>
+          </div>
+          <div id="div6" class="product col-md-6">
+            <h2>髪のダメージをケアをするために</h2>
+            <h4>rebuilding</h4>
+            <a href="https://ifing-beauty.com/products/list?category_id=34"><img src="../../image/product/prod007-rebuilding.jpg" alt="rebuilding リビルディング" class="img-fluid"></a>
+          </div>
+          <div id="div7" class="product col-md-6">
+            <h2>髪を強くするために</h2>
+            <h4>rebuilding</h4>
+            <a href="https://ifing-beauty.com/products/list?category_id=34"><img src="../../image/product/prod007-rebuilding.jpg" alt="rebuilding リビルディング" class="img-fluid"></a>
+          </div>
+          <div id="div8" class="product col-md-6">
+            <h2>パーマでのお悩みの方に</h2>
+            <h4>beCurly</h4>
+            <a href="https://ifing-beauty.com/products/list?category_id=31"><img src="../../image/product/prod003-beCurly.jpg" alt="beCurly カーリー" class="img-fluid"></a>
+          </div>
+          <div id="div9" class="product col-md-6">
+            <h2>ハリコシが欲しい方に</h2>
+            <h4>xVolume</h4>
+            <a href="https://ifing-beauty.com/products/list?category_id=30"><img src="../../image/product/prod008-xVolume.jpg" alt="xVolume ボリューム" class="img-fluid"></a>
+          </div>
+          <div id="div10" class="product col-md-6">
+            <h2>ボリュームが欲しい方に</h2>
+            <h4>xVolume</h4>
+            <a href="https://ifing-beauty.com/products/list?category_id=30"><img src="../../image/product/prod008-xVolume.jpg" alt="xVolume ボリューム" class="img-fluid"></a>
+          </div>
+
+          <div id="div12" class="product col-md-6">
+           <h2>まとまりを良くさせたい方に</h2>
+           <h4>smooth+</h4>
+           <a href="https://ifing-beauty.com/products/list?category_id=32"><img src="../../image/product/prod009-smooth.jpg" alt="smooth+ スムージング" class="img-fluid"></a>
+          </div>
+
+      </div>
+      <div class="row inner">
+        <div id="div11" class="product">
+          <h2>髪をしっとりさせたい方に</h2>
+          <div class="row">
+          <div class="col-md-6">
+            <h4>silk'n glow</h4>
+            <a href="https://ifing-beauty.com/products/list?category_id=33"><img src="../../image/product/prod004-silkglow.jpg" alt="silk'n glow シルク アンド グロー" class="img-fluid"></a>
+          </div>
+          <div class="col-md-6">
+            <h4>moisturizing</h4>
+            <a href="https://ifing-beauty.com/products/list?category_id=28"><img src="../../image/product/prod006-moisturizing.jpg" alt="moisturizing モイスト" class="img-fluid"></a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row inner try-again">
+        <button onClick="window.location.reload();" class="btn btn-dark">やり直す <i class="fas fa-redo"></i></button>
+      </div>
+      <!-- //row -->
+
+    </div>
+    <!-- end of right -->
+  </div>
+  </div>
+</body>
+<script>
+          $(document).on('click','.refresh',function(){
+           location.reload(true);
+           $('html, body').scrollTop(0);
+          });
+          function discri() {
+                                      document.getElementById("div1").style.display = "none";
+                                      document.getElementById("div2").style.display = "none";
+                                      document.getElementById("div3").style.display = "none";
+                                      document.getElementById("div4").style.display = "none";
+                                      document.getElementById("div5").style.display = "none";
+                                      document.getElementById("div6").style.display = "none";
+                                      document.getElementById("div7").style.display = "none";
+                                      document.getElementById("div8").style.display = "none";
+                                      document.getElementById("div9").style.display = "none";
+                                      document.getElementById("div10").style.display = "none";
+                                      document.getElementById("div11").style.display = "none";
+                                      document.getElementById("div12").style.display = "none";
+            var ele_6 = document.getElementsByClassName('expectation');
+                          for(i = 0; i < ele_6.length; i++) {
+                              if(ele_6[i].type="radio") {
+                                  if(ele_6[i].checked){
+                                    switch(ele_6[i].value){
+                                      case "div1": {
+                                        document.getElementById("div1").style.display = "block";
+                                      } break;
+                                      case "div2": {
+                                        document.getElementById("div2").style.display = "block";
+                                      } break;
+                                      case "div3": {
+                                        document.getElementById("div3").style.display = "block";
+                                      } break;
+                                      case "div4": {
+                                        var ele = document.getElementsByClassName('color');
+                                        for(i = 0; i < ele.length; i++) {
+                                            if(ele[i].type="radio") {
+                                                if(ele[i].checked){
+                                                  console.log(ele[i].value);
+                                                  if(ele[i].value == "yes-color"){
+                                                    var ele_6 = document.getElementsByClassName('expectation');
+                                                    for(i = 0; i < ele_6.length; i++) {
+
+                                                          if(ele_6[i].type="radio") {
+
+                                                              if(ele_6[i].checked){
+                                                                if(ele_6[i].value == "div4"){
+                                                                  document.getElementById("div4").style.display = "none";
+
+                                                                }else{
+                                                                  document.getElementById("div4").style.display = "block";
+                                                                }
+                                                              }
+                                                          }
+                                                      }
+                                                  }else{
+                                                    document.getElementById("div4").style.display = "block";
+                                                  }
+                                                }
+                                            }
+                                        }
+                                      } break;
+
+                                      case "div5": {
+                                        var ele = document.getElementsByClassName('perm');
+                                        for(i = 0; i < ele.length; i++) {
+
+                                            if(ele[i].type="radio") {
+
+                                                if(ele[i].checked){
+                                                  console.log(ele[i].value);
+                                                  if(ele[i].value == "yes-perm"){
+                                                    document.getElementById("div5").style.display = "none";
+
+                                                  }else{
+                                                    document.getElementById("div5").style.display = "block";
+                                                  }
+                                                }
+
+                                            }
+                                        }
+                                      } break;
+                                      case "div6": {
+                                        document.getElementById("div6").style.display = "block";
+                                      } break;
+                                      case "div7": {
+                                        document.getElementById("div7").style.display = "block";
+                                      } break;
+                                      case "div8": {
+                                        var ele1 = document.getElementsByClassName('perm');
+                                        for(i = 0; i < ele.length; i++) {
+
+                                            if(ele1[i].type="radio") {
+
+                                                if(ele1[i].checked){
+                                                  console.log(ele1[i].value);
+                                                  if(ele1[i].value == "yes-perm"){
+                                                    document.getElementById("div8").style.display = "none";
+
+                                                  }else{
+                                                    document.getElementById("div8").style.display = "block";
+                                                  }
+                                                }
+                                            }
+                                        }
+                                      } break;
+                                      case "div9": {
+                                        document.getElementById("div9").style.display = "block";
+                                      } break;
+                                      case "div10": {
+                                        document.getElementById("div10").style.display = "block";
+                                      } break;
+                                      case "div11": {
+                                        document.getElementById("div11").style.display = "block";
+                                      } break;
+                                      case "div12": {
+                                        document.getElementById("div12").style.display = "block";
+                                      } break;
+                                  }}
+                              }
+                          }
+          }
+</script>
+</html>

@@ -1,0 +1,638 @@
+body {
+  background:black;
+  min-height:100%;
+}
+
+html {
+  height: 100%;
+}
+
+
+
+
+.path-to-link {
+  padding-left:20px;
+  padding-top:10px;
+}
+
+.path-to-link p {
+  color:#7a7a7a;
+}
+
+.path-to-link p a {
+  text-decoration: none;
+  color:#7a7a7a;
+}
+
+.path-to-link p a:hover {
+  text-decoration:underline;
+  color:rgb(41,191,230);
+}
+
+.path-to-link h2 {
+  font-size:2em;
+}
+
+.previous-page {
+  position: fixed;
+  z-index: 999;
+  border-radius:10px;
+  border:3px double #707070;
+  background-color:rgba(255,255,255,0.9);
+  top:70px;
+  right:20px;
+  text-align:center;
+  padding:5px;
+  width:130px;
+  max-height:40px;
+}
+
+.previous-page a {
+  text-decoration:none;
+  color:#707070;
+  font-size:12px;
+}
+
+.previous-page a i {
+  font-size:1.5em;
+}
+
+
+.br_on {
+  display: none;
+}
+
+
+
+.jumbotron {
+  height: calc(100vh - 60px);
+  /*min-height: 500px;*/
+  background-image: url('../image/sect-bg/000-main-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  position: relative;
+  margin-bottom:0;
+}
+
+
+
+.jumbotron h2 {
+   font-size:24px;
+   /*margin-bottom:4vh;*/
+
+}
+
+/*.jumbotron h2 span {
+  color:white;
+  background:black;
+  padding:5px 10px;
+  line-height: 2em;
+}*/
+
+.jumbotron .sect {
+  position:fixed;
+  bottom:20px;
+}
+
+.strip {
+  padding:8vh 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.strip h6 {
+  text-align:center;
+  font-size:1.25em;
+  color:rgb(0,0,0);
+  font-weight:bold;
+  /*text-shadow:1px 2px 6px #9a9a9a;*/
+}
+
+/*.strip {
+  background:black;
+  width:100%;
+  margin:0 auto;
+  text-align:center;
+}*/
+
+.strip a {
+  width:100%;
+  margin:auto;
+  text-align: center;
+  /*background:white;*/
+  /*text-align:center;*/
+}
+
+.strip a .btn {
+  color:;
+}
+
+.navbar .logo {
+  width: 200px;
+}
+
+.top-logo {
+  width:100%;
+  max-width:200px;
+}
+
+
+
+.jumbotron .top_text {
+  background:black;
+  color: white;
+  padding:5px 10px;
+}
+
+
+
+.area_one {
+  background: #000;
+}
+
+
+.hair_care, .styling {
+  height:40vh;
+  background:#fff;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.area_two {
+  background:#000;
+  /*padding:20px;*/
+}
+
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.footer, .footer-oway {
+  background:#1a2228;
+}
+
+.footer-oway {
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+.footer p a, .footer p, .footer-oway p a, .footer-oway p {
+  color:white;
+  font-size:0.8em;
+  text-align: right;
+  padding-right:30px;
+}
+
+.footer p a, .footer-oway p a  {
+  color:white;
+  text-decoration: none;
+}
+
+.footer p a:hover, .footer-oway p a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+.page-top {
+  text-align:right;
+  text-decoration: none;
+  margin:3vh 0;
+}
+
+.page-top a {
+  color: black;
+}
+
+.shop {
+  position: fixed;
+  right: 40px;
+  top: 20px;
+  z-index: 999;
+}
+
+/*product_box*/
+.product_title {
+  height: 50%;
+}
+
+.product_title h2 {
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+
+
+.tile-wrapper {
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    position: relative;
+    height:35vh;
+    flex-direction: column;
+}
+.link-to-modal {
+    line-height: 0;
+}
+.link-to-modal img.show_modal, .link-to-modal img.purchase-items {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.link-to-modal:hover img.show_modal { /* this line has been changed */
+    -webkit-transform:scale(1.33); /* Safari and Chrome */
+    -moz-transform:scale(1.33); /* Firefox */
+    -ms-transform:scale(1.33); /* IE 9 */
+    -o-transform:scale(1.33); /* Opera */
+     transform:scale(1.33);
+     -webkit-filter: brightness(50%);
+
+}
+
+
+.link-to-modal:hover:after {
+    opacity:1;
+}
+
+
+.link-to-modal img.show_modal:hover {
+    opacity: 1;
+    background:#000;
+}
+
+.tile-wrapper .text-overlay, .purchase .text-overlay {
+    position: absolute;
+    /*width: 50%;*/
+    /*height: 50%;*/
+    overflow: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    background:rgba(0,0,0,0.28);
+    padding:6vh 0;
+}
+
+.tile-wrapper .text-overlay h2 {
+    color: white;
+    font-size: 32px;
+    line-height: 36px;
+    /* margin: 0 0 10px; */
+    font-family: 'Helvetica', sans-serif;
+    font-weight:bold;
+}
+
+.tile-wrapper .text-overlay h6 {
+    color: #fff;
+    font-size:22px;
+    font-family:"Hiragino Kaku Gothic ProN", "Hiragino Sans";
+
+}
+.tile-wrapper .text-overlay p {
+    color: white;
+    font-size: 24px;
+    margin-top:5vh;
+}
+
+
+.purchase {
+  margin:0;
+    padding:0;
+    overflow: hidden;
+    position: relative;
+    height:35vh;
+    flex-direction: column;
+}
+
+.purchase img {
+  object-fit: cover;
+}
+
+.purchase .text-overlay {
+  background:rgba(255,255,255,0.7);
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  color:#000;
+  padding-top:6vh;
+  padding-bottom:6vh;
+}
+
+.purchase .text-overlay h2 {
+  font-family: 'Archivo Black', sans-serif;
+}
+.purchase .text-overlay h6 {
+  font-size:18px;
+  /*font-family:'游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;*/
+}
+
+.purchase .text-overlay p {
+  margin-top:2vh;
+}
+
+.purchase .text-overlay .product_link p{
+  background: rgb(19,38,38);
+  background: linear-gradient(0deg, rgba(19,38,38,1) 0%, rgba(152,149,143,1) 100%);
+  padding:10px 0;
+  text-align: center;
+  color:#fff;
+}
+
+
+/*modal to IFing Beauty & Other Pages イフイングビューティー・他のページへ飛ぶモーダル・ウィンドウ*/
+
+.modal-title {
+  /*font-family: 'Archivo Black', sans-serif;*/
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight:bold;
+}
+
+.modal-body h5{
+  /*text-decoration: underline;*/
+  font-weight:bold;
+  font-size:18px;
+  text-align: center;
+}
+
+.modal-body h4 {
+  text-align: center;
+}
+
+.modal-body h3 {
+  font-weight:bold;
+  text-decoration: underline;
+}
+
+.modal-body p {
+  margin-left:20px;
+}
+
+.modal-body p {
+  font-size:16px;
+}
+
+.modal-body p.modal-text{
+  color:black;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons .btn {
+  width:95%;
+  margin:10px auto;
+}
+
+
+.modal-footer a {
+  /*color: white;*/
+  padding:10px 20px;
+  border-radius:10px;
+  box-shadow:1px 1px 3px #000;
+}
+
+.modal-footer a.go_to_enquete_page {
+  background: #bfbfbf;
+}
+
+.modal-footer a.go_to_ifing_beauty {
+  background: rgba(68, 108, 179, 1);
+}
+
+.modal-footer a.go_to_enquete_page:hover {
+  background: rgb(77,77,77);
+  background: linear-gradient(0deg, rgba(77,77,77,1) 0%, rgba(173,173,173,1) 100%);
+  text-decoration: underline;
+  color: white;
+  font-weight:bold;
+}
+
+
+.modal-footer a.go_to_ifing_beauty:hover {
+  background: rgb(68,108,179);
+  background: linear-gradient(0deg, rgba(68,108,179,0.01) 0%, rgba(73,114,182,1) 4%, rgba(192,255,255,1) 100%);
+  text-decoration: underline;
+  color: white;
+  font-weight:bold;
+}
+
+/*modal to IFing Beauty & Other Pages イフイングビューティー・他のページへ飛ぶモーダル・ウィンドウ*/
+
+
+/*bio-dynamic modal*/
+.biodynamic .biodynamic_img {
+  object-fit: cover;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
+.biodynamic {
+  margin-bottom:2vh;
+}
+
+.biodynamic-text {
+  margin-top:3vh;
+}
+
+.img-bottom {
+  margin-top:4vh;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+  .section-box, .section-box .light-dark {
+    height:30vh;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .tile-wrapper .text-overlay p {
+    color: white;
+    font-size: 20px;
+    margin-top:5vh;
+  }
+}
+
+
+
+ @media screen and (max-width: 768px) {
+  .jumbotron .top_text {
+    font-size:0.7em;
+  }
+
+  .hair_care, .styling {
+    height:40vh;
+  }
+
+  .hair_care .product_details p , .styling .product_details p {
+    font-size:0.7em;
+  }
+
+
+  .glass_and_aluminum_img img {
+    margin-bottom:3vh;
+  }
+
+  .footer-oway {
+    position:relative;
+  }
+
+
+ }
+
+@media screen and (max-width: 575.98px) {
+  .br_on {
+    display: block;
+  }
+
+  .jumbotron h2 {
+    font-size:1em;
+  }
+
+
+  .previous-page {
+    position: fixed;
+    z-index: 999;
+    bottom:6vh;
+  }
+
+  .modal-body h5{
+    line-height:1.5em;
+  }
+
+  .modal-body p {
+    font-size:0.9em;
+  }
+
+  .modal-body p.small {
+    font-size:0.7em;
+  }
+
+  .modal-body p.modal-text{
+    padding:5px 10px;
+    font-size:0.9em;
+  }
+
+  .ortoficcina {
+    margin-bottom: 3vh;
+  }
+
+
+  .biodynamic .biodynamic_img {
+    margin-bottom:3vh;
+  }
+
+  .jumbotron h2.desc {
+   font-size:18px;
+   /*margin-bottom:4vh;*/
+   position:absolute;
+   top:30%;
+   left:3%;
+}
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .tile-wrapper, .purchase {
+    height:45vh;
+  }
+
+  .logo {
+    width:140px;
+  }
+
+  .jumbotron {
+    object-fit: contain;
+  }
+
+
+  .hair_care, .styling {
+   height:40vh;
+  }
+
+  .area_two .hair_care, .area_two .styling {
+    max-width: 100% !important;
+  }
+
+
+
+  .hair_care .product_link, .styling .product_link {
+    margin-bottom:auto;
+    margin-top:auto;
+  }
+
+  .hair_care .product_link p, .styling .product_link p {
+    font-size: 0.8em;
+    padding:5px;
+  }
+
+
+
+  .shop {
+    width:127px;
+    height:72px;
+    right:10px;
+  }
+
+  .modal-body h5 {
+    font-size:0.9em;
+  }
+
+  .modal-body p.small {
+    font-size:0.6em;
+  }
+
+
+
+  .modal-body p.modal-text {
+    font-size:0.8em;
+  }
+
+}
+
+
+ @media screen and (max-width: 414px) {
+
+
+  .tile-wrapper .text-overlay h2 {
+      font-size:28px;
+  }
+
+  .jumbotron h2 {
+    font-size:0.8em;
+  }
+
+}
+
+

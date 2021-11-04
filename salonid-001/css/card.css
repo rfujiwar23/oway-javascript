@@ -1,0 +1,151 @@
+/* Visit https://nicolaskadis.info/posts/pure-css-flip-cards-using-bootstrap-4-and-css-grid-no-js for an explanation */
+
+/* for demo purposes */
+.card {
+  margin: 10px 10px;
+}
+
+/* Flip Cards CSS */
+.card-container {
+  display: grid;
+  perspective: 100%;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  grid-area: frontAndBack;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
+.card-block > .card-title {
+  font-size:0.9em;
+  font-weight:bold;
+}
+
+.back > .card-block .card-text {
+  font-size:0.9em;
+}
+
+.cardbox {
+  position: relative;
+  width: 100%;
+}
+
+.cardbox > .card-inner {
+  background-color:#fff;
+}
+
+.cardbox .card-inner h2 {
+  font-size:1.2vw;
+  text-decoration: none;
+}
+
+.cardbox .card-inner h3 {
+  text-decoration: none;
+  font-family: 'DDINRegular';
+  font-size:0.9em;
+  padding-left:10px;
+  word-break: keep-all;
+
+}
+
+.image {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 95%;
+  margin:0 auto;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,105,105, 0.7);
+
+}
+
+.cardbox:hover .overlay {
+  opacity:1;
+}
+
+.text {
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  padding:0 15px;
+}
+
+
+@media screen and (min-width:980px) and (max-width:1159px){
+  .cardbox .card-inner h2 {
+  font-size:0.9em;
+  text-decoration: none;
+  }
+
+  .overlay .text h3 {
+    font-size:0.8em;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .cardbox {
+    margin-bottom:3vh;
+  }
+
+  .cardbox .card-inner h2 {
+    font-size:1.4em;
+    text-decoration: none;
+  }
+
+  .cardbox .card-inner h3 {
+    font-size:1.25em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .cardbox .card-inner h2 {
+    font-size:2.25vw;
+    text-decoration: none;
+  }
+
+  .cardbox .card-inner h3 {
+    font-size:1em;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .cardbox .card-inner h2 {
+    font-size:4.5vw;
+    text-decoration: none;
+  }
+}

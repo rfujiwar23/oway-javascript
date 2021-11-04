@@ -1,0 +1,323 @@
+body {
+  background: #fff;
+  overflow-x: hidden; }
+
+.nav-logo {
+  width: 200px;
+  height: 40px; }
+
+.jumbotron {
+  padding-top: 56.25%;
+  background: url("../img/top-img.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0;
+  margin-top: 66px;
+  position: relative; }
+  .jumbotron .logo {
+    position: absolute;
+    top: 5%;
+    left: 10px; }
+    .jumbotron .logo p {
+      font-weight: bold;
+      font-size: 2em;
+      text-align: center; }
+
+.sect h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #fff; }
+.sect h4 {
+  font-size: 1em;
+  text-align: center;
+  color: #fff; }
+.sect .about-sunway {
+  margin: 3vh auto;
+  padding: 20px 30px; }
+  .sect .about-sunway p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 2em; }
+.sect .patented-test {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.67); }
+.sect .characteristics {
+  background: #fff;
+  text-align: center;
+  padding: 20px 10px; }
+  .sect .characteristics h5 {
+    text-transform: uppercase;
+    font-size: 20px; }
+  .sect .characteristics h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px; }
+  .sect .characteristics p {
+    margin: 30px auto;
+    font-size: 14px;
+    line-height: 2em;
+    text-align: left; }
+
+.pt {
+  background: url("../img/img-orto.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: -40px;
+  padding: 5vh 0; }
+  .pt .sect h2 {
+    color: black;
+    font-weight: bold; }
+  .pt .sect .about-oway {
+    background: rgba(255, 255, 255, 0.67);
+    border-radius: 5px;
+    box-shadow: 3px 6px 6px rgba(50, 50, 50, 0.7);
+    line-height: 2em; }
+
+.pt1 {
+  background: #434343;
+  padding: 4vh 0; }
+
+.pt2 {
+  background: #808080;
+  padding: 4vh 0 0; }
+  .pt2 .sect .pro {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.3);
+    border: 3px solid #BEC1DF; }
+    .pt2 .sect .pro .details {
+      background: #fff;
+      border-radius: 10px; }
+      .pt2 .sect .pro .details h3 {
+        font-size: 1.25em; }
+      .pt2 .sect .pro .details h4 {
+        text-align: left;
+        font-size: 0.9em;
+        color: #434343; }
+      .pt2 .sect .pro .details p {
+        font-size: 0.8em; }
+
+.pt3 {
+  background: #9f9f9f;
+  padding: 4vh 0; }
+  .pt3 .sect {
+    margin: 0 40px; }
+    .pt3 .sect .preservative-free {
+      margin: 5vh auto; }
+      .pt3 .sect .preservative-free h2 {
+        font-size: 32px; }
+      .pt3 .sect .preservative-free .center-text {
+        margin: 0 auto; }
+      .pt3 .sect .preservative-free p {
+        font-size: 16px;
+        color: #fff;
+        font-weight: bold;
+        margin-top: 2vh;
+        line-height: 2em; }
+
+.pt4 {
+  background: #434343; }
+  .pt4 .sect {
+    text-align: center; }
+    .pt4 .sect .extra p {
+      color: #fff;
+      line-height: 2em; }
+  .pt4 .remove-padding {
+    padding: 0 !important;
+    margin: 0 !important; }
+
+.pt5 {
+  background: #fff;
+  padding: 4vh 0; }
+  .pt5 .sect h2 {
+    color: #000; }
+  .pt5 .sect h4 {
+    color: #000; }
+  .pt5 .sect .owl-carousel .owl-stage {
+    display: flex; }
+  .pt5 .sect .owl-carousel .owl-item {
+    display: flex;
+    flex: 1 0 auto; }
+  .pt5 .sect .owl-carousel a {
+    text-decoration: none;
+    color: #000; }
+    .pt5 .sect .owl-carousel a .product {
+      display: flex;
+      flex-direction: column;
+      margin: 0 15px;
+      text-align: center;
+      background: #fff; }
+      .pt5 .sect .owl-carousel a .product .caption {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column; }
+        .pt5 .sect .owl-carousel a .product .caption .flex-text {
+          flex-grow: 1; }
+      .pt5 .sect .owl-carousel a .product h3 {
+        text-align: center;
+        margin-top: 3vh;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: normal;
+        font-size: 24px; }
+      .pt5 .sect .owl-carousel a .product h4 {
+        text-align: center;
+        color: #000; }
+      .pt5 .sect .owl-carousel a .product h6 span {
+        font-weight: bold; }
+      .pt5 .sect .owl-carousel a .product p.price {
+        color: #b51423; }
+        .pt5 .sect .owl-carousel a .product p.price strong {
+          font-size: 2.5em; }
+      .pt5 .sect .owl-carousel a .product p.with-tax {
+        font-size: 16px; }
+        .pt5 .sect .owl-carousel a .product p.with-tax span {
+          font-size: 2em;
+          font-weight: bold; }
+
+.match {
+  z-index: 999;
+  position: fixed;
+  top: 80px;
+  right: 3%;
+  padding: 15px 20px;
+  background: #9f9f9f;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 2px 3px 6px #434343; }
+  .match a {
+    text-shadow: 1px 1px 1px #434343;
+    color: #fff; }
+
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  background: white;
+  border: none; }
+
+.card {
+  background-color: transparent;
+  border: transparent; }
+  .card .card-text-area {
+    color: white; }
+
+footer {
+  background: #fff; }
+  footer .footer-contents {
+    text-align: center;
+    font-size: 0.9em; }
+    footer .footer-contents p {
+      color: #434343; }
+      footer .footer-contents p a {
+        padding: 0 10px;
+        color: #434343;
+        text-decoration: none; }
+      footer .footer-contents p a:hover {
+        padding-bottom: 3px;
+        font-weight: bold;
+        border-bottom: 1px solid #434343; }
+
+@media (max-width: 992px) {
+  .disp-product {
+    margin: 20px auto; }
+
+  .pt2 {
+    padding: 4vh 0 0; }
+    .pt2 .sect .char {
+      padding: 20px;
+      border: rgba(80, 80, 80, 0.5) 1px solid;
+      height: calc(100vh / 2);
+      max-height: 350px; }
+      .pt2 .sect .char .content {
+        background: rgba(255, 255, 255, 0.8);
+        max-height: 290px; }
+        .pt2 .sect .char .content p {
+          font-size: 0.8em; }
+
+  .pt5 {
+    padding: 4vh 0; }
+    .pt5 .sect .owl-carousel .product {
+      margin: 0 10px; }
+      .pt5 .sect .owl-carousel .product h3 {
+        font-size: 22px; } }
+@media (max-width: 768px) {
+  .jumbotron {
+    padding-top: 56.25%;
+    background: url("../img/top-img.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0;
+    margin-top: 66px;
+    position: relative; }
+    .jumbotron .logo {
+      position: absolute;
+      top: 10%;
+      left: 10px; }
+      .jumbotron .logo p {
+        font-weight: bold;
+        font-size: 2em;
+        text-align: center; }
+
+  .pt2 {
+    padding-top: 4vh; }
+    .pt2 .sect .pro {
+      margin: 0 20px; }
+
+  .pt3 .sect {
+    margin: 0 20px; }
+
+  .pt4 .sect .extra p {
+    font-size: 0.8em; }
+
+  .pt5 .sect .owl-carousel .product h3 {
+    font-size: 18px; }
+  .pt5 .sect .owl-carousel .product h4 {
+    font-size: 0.7em; }
+
+  .jumbotron .logo {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 15%;
+    text-align: center; }
+    .jumbotron .logo p {
+      font-weight: bold;
+      font-size: 1em; } }
+@media (max-width: 576px) {
+  .disp-product {
+    margin: 20px auto; }
+
+  .pt2 {
+    padding: 2vh 0 0; }
+    .pt2 .sect .char {
+      padding: 20px;
+      border: rgba(80, 80, 80, 0.5) 1px solid;
+      height: calc(100vh / 2);
+      max-height: 400px; }
+      .pt2 .sect .char .content {
+        background: rgba(255, 255, 255, 0.8);
+        height: calc(100vh / 3); }
+        .pt2 .sect .char .content h3 {
+          padding-top: 20px; }
+        .pt2 .sect .char .content p {
+          font-size: 0.8em; }
+
+  footer {
+    background: #fff; }
+    footer .footer-contents {
+      text-align: center;
+      font-size: 0.7em; }
+      footer .footer-contents p a {
+        padding: 0 5px; } }
+@media (max-width: 576px) {
+  .pt4 {
+    padding: 4vh 10px 0; }
+    .pt4 .sect .extra p {
+      font-size: 0.8em;
+      padding-bottom: 3vh; }
+
+  .sect .about-oway p {
+    font-size: 0.9em; }
+  .sect .about-sunway p {
+    font-size: 0.9em; } }

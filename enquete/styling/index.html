@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>【公式】OWAY - IFING BEAUTY ONLINE ｜スタイリング アンケート</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+  <link rel="manifest" href="../../favicon/site.webmanifest">
+<link rel="stylesheet" href="../../css/reset.css">
+<link rel="stylesheet" href="../../css/styling.css">
+<link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/d-din" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="../../img/ifing_logo.svg">
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+
+<script>
+  $(document).ready(function(){
+    $(".drop-down-select select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+});
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.design-select input[type="radio"]').click(function() {
+            var inputValue = $(this).attr("value");
+            var targetBox = $("." + inputValue);
+            $(".index").not(targetBox).hide();
+            $(targetBox).show();
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.type-select input[type="radio"]').click(function() {
+            var inputValue = $(this).attr("value");
+            var targetBox = $("." + inputValue);
+            $(".index2").not(targetBox).hide();
+            $(targetBox).show();
+        });
+    });
+</script>
+
+
+
+</head>
+
+
+
+    <body>
+
+
+      <div id="wrapper">
+      <nav class="navbar sticky-top navbar-light bg-light">
+        <a href="../../index.html">
+        <img src="../../image/logo.svg" alt="IFing Beauty Logo" class="logo">
+        </a>
+      </nav>
+        <!-- container-fluid -->
+        <div class="container-fluid">
+
+
+          <div class="page-title col-lg-4 offset-lg-4">
+            <h3 class="title-logo"><img src="../../image/oway_logo.png" alt="oway logo" width="65" height="65">infine
+            <h2 class="title">オーウェイ スタイリング</h2>
+
+          </div>
+
+
+          <div class="go-back-to-index">
+              <a href="../../index.html#CategoryModal" class="btn btn-warning">トップページへ戻る<br><span>【カテゴリーを選択する画面が出てきます】</span></a>
+            </div>
+
+          </h3>
+            <div class="col-lg-4 offset-lg-4 col-md-8 offset-md-2 drop-down-text">
+              <p><span>デザインまたはタイプで選択 <i class="fas fa-arrow-circle-down"></i></span></p>
+            </div>
+
+            <div class="col-lg-4 offset-lg-4 col-md-8 offset-md-2 drop-down-select">
+            <select>
+                <option value="design">スタイルメイク別で選ぶ</option>
+                <option value="type">スタイリング剤のタイプ別で選ぶ</option>
+            </select>
+            </div>
+
+
+
+
+
+            <div class="design box">
+
+              <div class="d-r row">
+                <div class="design-select col-lg-3 col-md-4 justify-content-center column">
+                  <div class="category-text">
+                    <h6><span>こちらからお選びください <i class="fas fa-arrow-circle-down"></i></span></h6>
+                  </div>
+                  <input class="checkbox-tools" type="radio" name="design" id="Soft" value="Soft" checked="checked">
+                  <label class="for-checkbox-tools" for="Soft">
+                    軽い束感やニュアンスをつくる
+                  </label>
+                  <br>
+                  <input class="checkbox-tools" type="radio" name="design" id="Rough" value="Rough">
+                  <label class="for-checkbox-tools" for="Rough">
+                    程よいセット力で無造作スタイルをつくる
+                  </label>
+                  <br>
+                  <input class="checkbox-tools" type="radio" name="design" id="Hard" value="Hard">
+                  <label class="for-checkbox-tools" for="Hard">
+                    ハードなセット力でスタイリング＆キープ
+                  </label>
+                  <br>
+                  <input class="checkbox-tools" type="radio" name="design" id="Gloss" value="Gloss">
+                  <label class="for-checkbox-tools" for="Gloss">
+                    髪に栄養とツヤを与える
+                  </label>
+                  <br>
+                  <input class="checkbox-tools" type="radio" name="design" id="Volume" value="Volume">
+                  <label class="for-checkbox-tools" for="Volume">
+                    ボリュームをだす
+                  </label>
+                  <input class="checkbox-tools" type="radio" name="design" id="Curl" value="Curl">
+                  <label class="for-checkbox-tools" for="Curl">
+                    カールを長持ちさせる
+                  </label>
+                  <input class="checkbox-tools" type="radio" name="design" id="Dryer" value="Dryer">
+                  <label class="for-checkbox-tools" for="Dryer">
+                    ドライヤーで乾かす時間を短縮
+                  </label>
+                </div>
+                <div class="col-lg-9 col-md-8 justify-content-center column-2">
+                  <div class="Soft index my-auto">
+                    <div class="col-lg-8 offset-lg-2 description-text justify-content-center column">
+                      <h3>デザインの特徴：</h3>
+                      <p class="p-space-bottom">ソフトなセット力。ツヤ感アップ</p>
+                      <p class="p-footer">画像をクリックすると商品ページへ飛びます</p>
+                    </div>
+                      <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                          <div class="card infine">
+                            <div class="card-title">
+                              <h2>プレシャスワックス</h2>
+                              <h3>Precious Wax</h3>
+                            </div>
+                            <div class="card-body">
+                              <a href="https://ifing-beauty.com/products/detail/117">
+                                <img src="../../image/infine/infine007_precious_wax.jpg" alt="プレシャスワックス" class="img-fluid">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                          <div class="card infine">
+                            <div class="card-title">
+                              <h2>シャビー・マッド</h2>
+                              <h3>Shabby Mud</h3>
+                            </div>
+                            <div class="card-body">
+                              <a href="https://ifing-beauty.com/products/detail/118">
+                              <img src="../../image/infine/infine011_shabby_mud.jpg" alt="シャビー・マッド" class="img-fluid">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                          <div class="card infine">
+                            <div class="card-title">
+                              <h2>クイック・グルー</h2>
+                              <h3>Quick Glue</h3>
+                            </div>
+                            <div class="card-body">
+                              <a href="https://ifing-beauty.com/products/detail/126">
+                              <img src="../../image/infine/infine008_quick_glue.jpg" alt="シャビー・マッド" class="img-fluid">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="Rough index my-auto">
+                    <div class="col-lg-8 offset-lg-2 description-text justify-content-center">
+                      <h3>デザインの特徴：</h3>
+                      <p class="p-space-bottom">程よいセット力・無造作ヘア</p>
+                      <p class="p-footer">画像をクリックすると商品ページへ飛びます</p>
+                    </div>
+                      <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                          <div class="card infine">
+                            <div class="card-title">
+                              <h2>ボーホ・ポマード</h2>
+                              <h3>Boho Pomade</h3>
+                            </div>
+                            <div class="card-body">
+                              <a href="https://ifing-beauty.com/products/detail/119">
+                                <img src="../../image/infine/infine001_boho_pomade.jpg" alt="ボーホ・ポマード" class="img-fluid">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                          <div class="card infine">
+                            <div class="card-title">
+                              <h2>フラックスポーション</h2>
+                              <h3>Flux Potion</h3>
+                            </div>
+                            <div class="card-body">
+                              <a href="https://ifing-beauty.com/products/detail/121">
+                                <img src="../../image/infine/infine002_flux_potion.jpg" alt="フラックスポーション" class="img-fluid">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                          <div class="card infine">
+                            <div class="card-title">
+                              <h2>シーソルト・スプレイ</h2>
+                              <h3>Sea Salt Spray</h3>
+                            </div>
+                            <div class="card-body">
+                              <a href="https://ifing-beauty.com/products/detail/123">
+                                <img src="../../image/infine/infine010_sea_salt_spray.jpg" alt="シーソルト・スプレイ" class="img-fluid">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                          <div class="card infine">
+                            <div class="card-title">
+                              <h2>サーマルプロテクター</h2>
+                              <h3>Thermal Protector</h3>
+                            </div>
+                            <div class="card-body">
+                              <a href="https://ifing-beauty.com/products/detail/128">
+                                <img src="../../image/infine/infine013_thermal_protector.jpg" alt="サーマルプロテクター" class="img-fluid">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="Hard index my-auto">
+                    <div class="col-lg-8 offset-lg-2 description-text justify-content-center">
+                      <h3>デザインの特徴：</h3>
+                      <p class="p-space-bottom">ハードなセット力・スタイルキープ</p>
+                      <p class="p-footer">画像をクリックすると商品ページへ飛びます</p>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>シェイピング・パティ</h2>
+                            <h3>Shaping Putty</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/120">
+                              <img src="../../image/infine/infine012_shaping_putty.jpg" alt="シェイピング・パティ" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>スカルプティング・ミスト</h2>
+                            <h3>Sculpting Mist</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/124">
+                              <img src="../../image/infine/infine009_sculpting_mist.jpg" alt="スカルプティング・ミスト" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>フローズン・グレイズ</h2>
+                            <h3>Frozen Glaze</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/125">
+                              <img src="../../image/infine/infine003_frozen_glaze.jpg" alt="フローズン・グレイズ" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Gloss index my-auto">
+                    <div class="col-lg-8 offset-lg-2 description-text justify-content-center">
+                      <h3>デザインの特徴：</h3>
+                      <p class="p-space-bottom">艶を与える</p>
+                      <p class="p-footer">画像をクリックすると商品ページへ飛びます</p>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>ニューチュアリング・ドロップス</h2>
+                            <h3>Nuturing Drops</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/115">
+                              <img src="../../image/infine/infine006_nurturing_drops.jpg" alt="ニューチュアリング・ドロップ" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>グロッシー・ネクター</h2>
+                            <h3>Glossy Nectar</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/116">
+                              <img src="../../image/infine/infine005_glossy_nectar.jpg" alt="グロッシー・ネクター" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>グラムシャイン・クラウド</h2>
+                            <h3>Glamshine Cloud</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/122">
+                              <img src="../../image/infine/infine004_glamshine_cloud.jpg" alt="グラムシャインクラウド" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Volume index my-auto">
+                    <div class="col-lg-8 offset-lg-2 description-text justify-content-center">
+                      <h3>デザインの特徴：</h3>
+                      <p class="p-space-bottom">ボリュームを与える</p>
+                      <p class="p-footer">画像をクリックすると商品ページへ飛びます</p>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>シーソルト・スプレー</h2>
+                            <h3>Nuturing Drops</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/115">
+                              <img src="../../image/infine/infine010_sea_salt_spray.jpg" alt="ニューチュアリング・ドロップ" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Curl index my-auto">
+                    <div class="col-lg-8 offset-lg-2 description-text justify-content-center">
+                      <h3>デザインの特徴：</h3>
+                      <p class="p-space-bottom">ボリュームを与える</p>
+                      <p class="p-footer">画像をクリックすると商品ページへ飛びます</p>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>Thermal Protector</h2>
+                            <h3>サーマル・プロテクター</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/115">
+                              <img src="../../image/infine/infine013_thermal_protector.jpg" alt="サーマル・プロテクター" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Dryer index my-auto">
+                    <div class="col-lg-8 offset-lg-2 description-text justify-content-center">
+                      <h3>デザインの特徴：</h3>
+                      <p class="p-space-bottom">ボリュームを与える</p>
+                      <p class="p-footer">画像をクリックすると商品ページへ飛びます</p>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>バイオリッチウォーター</h2>
+                            <h3>Bio Rich Water</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/115">
+                              <img src="../../image/infine/infine014_bio-rich-water.jpg" alt="" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+            <div class="type box">
+
+              <div class="d-t row">
+                <div class="type-select col-lg-3 col-md-4 justify-content-center column">
+                  <div class="category-text">
+                    <h6><span>こちらからお選び下さい <i class="fas fa-arrow-circle-down"></i></span></h6>
+                  </div>
+                  <input class="checkbox-tools" type="radio" name="type" id="Balm" value="Balm" checked="checked">
+                  <label class="for-checkbox-tools" for="Balm">
+                    organic バーム
+                  </label><!--
+                  --><input class="checkbox-tools" type="radio" name="type" id="Wax" value="Wax">
+                  <label class="for-checkbox-tools" for="Wax">
+                    organic ワックス
+                  </label><!--
+                  --><input class="checkbox-tools" type="radio" name="type" id="Gel" value="Gel">
+                  <label class="for-checkbox-tools" for="Gel">
+                    organic ジェル
+                  </label><!--
+                  --><input class="checkbox-tools" type="radio" name="type" id="Oil" value="Oil">
+                  <label class="for-checkbox-tools" for="Oil">
+                    organic オイル
+                  </label><!--
+                  --><input class="checkbox-tools" type="radio" name="type" id="Mist" value="Mist">
+                  <label class="for-checkbox-tools" for="Mist">
+                    organic ミスト
+                  </label><!--
+                  --><input class="checkbox-tools" type="radio" name="type" id="Pomade" value="Pomade">
+                  <label class="for-checkbox-tools" for="Pomade">
+                    organic フルイド
+                  </label>
+                </div>
+                <div class="col-lg-9 col-md-8 justify-content-center column-2">
+                  <div class="Balm index2 my-auto">
+                    <div class="col-md-8 offset-md-2 description-text justify-content-center">
+                      <h3>デザインの特徴：</h3>
+                      <p class="p-space-bottom">ヘアだけでなく、ハンドにもリップにも使用可</p>
+                      <p class="p-footer">画像をクリックすると商品ページへ飛びます</p>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>プレシャスワックス</h2>
+                            <h3>Precious Wax</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/117">
+                              <img src="../../image/infine/infine007_precious_wax.jpg" alt="プレシャスワックス" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Wax index2 my-auto">
+                    <div class="col-md-8 offset-md-2 description-text justify-content-center">
+                      <h3>デザインの特徴：</h3>
+                      <p class="p-space-bottom">クレイ・ファイバー・ペーストの3種類</p>
+                      <p class="p-footer">画像をクリックすると商品ページへ飛びます</p>
+                    </div>
+
+                    <div class="row justify-content-center">
+
+
+                      <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>クイック・グルー</h2>
+                            <h3>Quick Glue</h3>
+                          </div>
+                          <div class="card-body wax-clay-fiber">
+                            <p><span>ワックス</span></p>
+                            <a href="https://ifing-beauty.com/products/detail/126">
+                              <img src="../../image/infine/infine008_quick_glue.jpg" alt="クイック・グルー" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>シャビー・マッド</h2>
+                            <h3>Shabby Mud</h3>
+                          </div>
+                          <div class="card-body wax-clay-fiber">
+                            <p><span>クレイ</span></p>
+                            <a href="https://ifing-beauty.com/products/detail/118">
+                            <img src="../../image/infine/infine011_shabby_mud.jpg" alt="シャビー・マッド" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>ボーホ・ポマード</h2>
+                            <h3>Boho Pomade</h3>
+                          </div>
+                          <div class="card-body wax-clay-fiber">
+                            <p><span>ペースト</span></p>
+                            <a href="https://ifing-beauty.com/products/detail/119">
+                              <img src="../../image/infine/infine001_boho_pomade.jpg" alt="ボーホ・ポマード" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>シェイピング・パティ</h2>
+                            <h3>Shaping Putty</h3>
+                          </div>
+                          <div class="card-body wax-clay-fiber">
+                            <p><span>ファイバー</span></p>
+                            <a href="https://ifing-beauty.com/products/detail/120">
+                              <img src="../../image/infine/infine012_shaping_putty.jpg" alt="シェイピング・パティ" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="Gel index2 my-auto">
+                    <div class="col-md-8 offset-md-2 description-text justify-content-center">
+                      <h3>デザインの特徴：</h3>
+                      <p class="p-space-bottom">ウェットでもドライでも対応可</p>
+                      <p class="p-footer">画像をクリックすると商品ページへ飛びます</p>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>フローズン・グレイズ</h2>
+                            <h3>Frozen Glaze</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/125">
+                              <img src="../../image/infine/infine003_frozen_glaze.jpg" alt="フローズン・グレイズ" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Oil index2 my-auto">
+                    <div class="col-md-8 offset-md-2 description-text justify-content-center">
+                      <h3>デザインの特徴：</h3>
+                      <p class="p-space-bottom">ツヤと保湿に最適</p>
+                      <p class="p-footer">画像をクリックすると商品ページへ飛びます</p>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>ニューチュアリング・ドロップ</h2>
+                            <h3>Nuturing Drop</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/115">
+                              <img src="../../image/infine/infine006_nurturing_drops.jpg" alt="ニューチュアリング・ドロップ" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>グロッシーネクター</h2>
+                            <h3>Glossy Nectar</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/116">
+                              <img src="../../image/infine/infine005_glossy_nectar.jpg" alt="グロッシーネクター" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Mist index2 my-auto">
+                    <div class="col-md-8 offset-md-2 description-text justify-content-center">
+                      <h3>デザインの特徴：</h3>
+                      <p class="p-space-bottom">エアゾールを使わないオーガニックミスト</p>
+                      <p class="p-footer">画像をクリックすると商品ページへ飛びます</p>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>グラムシャイン・クラウド</h2>
+                            <h3>Glamshine Cloud</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/122">
+                              <img src="../../image/infine/infine004_glamshine_cloud.jpg" alt="グラムシャイン・クラウド" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>スカルプティング・ミスト</h2>
+                            <h3>Sculpting Mist</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/124">
+                              <img src="../../image/infine/infine009_sculpting_mist.jpg" alt="スカルプティング・ミスト" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>シーソルト・スプレー</h2>
+                            <h3>Sea Salt Spray</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/123">
+                              <img src="../../image/infine/infine010_sea_salt_spray.jpg" alt="シーソルト・スプレー" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>バイオリッチウォーター</h2>
+                            <h3>Bio Rich Water</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/127">
+                              <img src="../../image/infine/infine010_sea_salt_spray.jpg" alt="バイオリッチウォーター" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Pomade index2 my-auto">
+                    <div class="col-md-8 offset-md-2 description-text justify-content-center">
+                      <h3>デザインの特徴：</h3>
+                      <p class="p-space-bottom">ソフトなセット力。艶感アップ</p>
+                      <p class="p-footer">画像をクリックすると商品ページへ飛びます</p>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card infine">
+                          <div class="card-title">
+                            <h2>フラックス・ポーション</h2>
+                            <h3>Flux Potion</h3>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://ifing-beauty.com/products/detail/121">
+                              <img src="../../image/infine/infine002_flux_potion.jpg" alt="フラックス・ポーション" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+        </div>
+        <!-- //container-fluid -->
+      </div>
+      <!-- <footer class="footer">
+          <p><a href="#">特定商取引法に基づく表示</a></p>
+          <p><a href="#">プライバシーポリシー</a></p>
+          <p><a href="#">利用規約</a></p>
+          <p><a href="#">会社情報</a></p>
+          <p>Copyright © IFING Co., Ltd. All Rights Reserved.</p>
+      </footer> -->
+    </body>
+
+</html>

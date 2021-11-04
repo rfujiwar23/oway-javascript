@@ -1,0 +1,216 @@
+html,
+body {
+  height: 100%;
+}
+
+.navbar .logo {
+  width: 200px;
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+.left-side {
+  display: grid;
+  grid-template-rows: auto auto;
+  height: calc(100vh - 60px);
+}
+
+.left-side .media {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.left-side .media .img-carousel {
+  width: 75%;
+  margin: 30px auto;
+}
+
+.jumbotron {
+  background: url(../../image/product/prod010-duetto.jpg);
+}
+
+.right-side {
+  /*background:orange;*/
+  border-left: 5px double #000;
+  height: calc(100vh - 60px);
+}
+
+.right-side h1 {
+  font-family: "DDINRegular";
+  font-weight: normal;
+}
+
+.right-side h2 {
+  font-size: 1.5em;
+}
+
+.right-side h3 {
+  font-size: 1em;
+}
+
+.right-side .product-info {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.right-side .product-info .youTube-video {
+  padding: 20px;
+}
+
+.right-side .product-info .text {
+  padding: 10px 20px;
+  border: 1px;
+  box-shadow: 0 3px 6x #9a9a9a;
+}
+
+.right-side .product-info .text h2 {
+  font-size: 1.5em;
+}
+
+.right-side .product-info .text h3 {
+  font-size: 1em;
+}
+
+.right-side .product-info .text p {
+  font-size: 0.9em;
+  padding: 10px;
+  line-height: 2em;
+}
+
+.right-side .go-back-to-index {
+  border: 1px solid #9a9a9a;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin-bottom: 5vh;
+  position: absolute;
+  top: 100%;
+}
+
+.right-side .go-back-to-index a {
+  text-decoration: none;
+  color: #000;
+}
+
+.right-side .go-back-to-index a span {
+  font-size: 0.8em;
+}
+
+.right-side .go-back-to-index:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(217, 193, 57, 1) 0%,
+    rgba(236, 232, 212, 1) 50%
+  );
+}
+
+.right-side .go-back-to-index a:hover {
+  font-weight: bold;
+  color: #000;
+}
+
+/*carousel*/
+#thumbnail-preview-indicators {
+  position: relative;
+  overflow: hidden;
+}
+#thumbnail-preview-indicators .slides .slide-1,
+#thumbnail-preview-indicators .slides .slide-2 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#thumbnail-preview-indicators,
+#thumbnail-preview-indicators .slides,
+#thumbnail-preview-indicators .slides .slide-1,
+#thumbnail-preview-indicators .slides .slide-2,
+#thumbnail-preview-indicators .slides .slide-3 {
+  height: 480px;
+}
+#thumbnail-preview-indicators .slides .slide-1 {
+  background-image: url(https://res.cloudinary.com/rfujiwar23/image/upload/v1604641375/Duetto-04.jpg);
+}
+#thumbnail-preview-indicators .slides .slide-2 {
+  background-image: url(https://res.cloudinary.com/rfujiwar23/image/upload/v1604641375/Duetto-05.jpg);
+}
+
+#thumbnail-preview-indicators .carousel-inner .item .carousel-caption {
+  top: 20%;
+  bottom: inherit;
+}
+
+/* CAROUSEL INDICATORS */
+#thumbnail-preview-indicators .carousel-indicators li,
+#thumbnail-preview-indicators .carousel-indicators li.active {
+  width: 152px;
+  height: auto;
+  max-height: 102px;
+
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 1px;
+}
+#thumbnail-preview-indicators .carousel-indicators li.active {
+  border: 1px solid red;
+}
+#thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+  width: 150px;
+  height: auto;
+  max-height: 100px;
+  overflow: hidden;
+
+  opacity: 0.8;
+  display: block;
+  padding: 0;
+  margin-bottom: 0;
+  background-color: #fff;
+  border: none;
+  border-radius: 2px;
+  transition: all 550ms ease-out;
+}
+#thumbnail-preview-indicators .carousel-indicators li:hover > .thumbnail,
+#thumbnail-preview-indicators
+  .carousel-indicators
+  li.active
+  > .thumbnail:hover {
+  position: relative;
+  display: block;
+  border: 1px solid white;
+  opacity: 1;
+  transform: scale(1.5);
+  z-index: 1;
+}
+#thumbnail-preview-indicators
+  .carousel-indicators
+  li.active
+  > .thumbnail:hover {
+  border: 1px solid red;
+}
+
+@media only screen and (max-width: 990px) {
+  /* For mobile phones: */
+  .right-side .product-info {
+    position: relative;
+  }
+
+  .left-side {
+    height: 70vh;
+  }
+
+  .right-side {
+    /*border-top: 5px double #000;*/
+    border-left: none;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .left-side {
+    display: none;
+  }
+}
