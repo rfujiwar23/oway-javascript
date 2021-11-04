@@ -20,3 +20,25 @@ var vm = new Vue({
     ]
   }
 });
+
+var vm = new Vue({
+  el: '#rebuilding',
+  data: {
+    rebuildingItems: [
+      {productNameJP: 'リビルディング ヘアバス 240ml', productNameENG: 'rebuilding hair bath 240ml', imageSource: '../../image/individual/rebuilding_hair_bath_240_F.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/42?salon_id=5'},
+      {productNameJP: 'リビルディング ヘアマスク 150ml', productNameENG: 'rebuilding hair mask 150ml', imageSource: '../../image/individual/rebuilding_hair_mask_150gF.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/44?salon_id=5'},
+      {productNameJP: 'リビルディング スプレー 100ml', productNameENG: 'rebuilding spray 100ml', imageSource: '../../image/individual/rebuilding_spray_100ml_F.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/46?salon_id=5'}
+    ]
+  }
+});
+
+var vm = new Vue({
+  el: '#color',
+  data: {
+    colorItems: [
+      {productNameJP: 'カラープロテクション ヘアバス 240ml', productNameENG: 'color protection hair bath 240ml', imageSource: '../../image/individual/color_protection_hair_bath_240ml.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/18?salon_id=5'},
+      {productNameJP: 'カラープロテクション ヘアマスク 150ml', productNameENG: 'color protection hair mask 150ml', imageSource: '../../image/individual/color_protection_hair_mask_150ml.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/20?salon_id=5'},
+      {productNameJP: 'カラープロテクション ベール 160ml', productNameENG: 'color protection veil 160ml', imageSource: '../../image/individual/color_protection_veil_160ml.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/22?salon_id=5'}
+    ]
+  }
+});
