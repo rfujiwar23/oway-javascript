@@ -53,3 +53,14 @@ var vm = new Vue({
     ]
   }
 });
+
+var vm = new Vue({
+  el: '#dailyAct',
+  data: {
+    dailyItems: [
+      {productNameJP: 'デイリーユーズ　ヘアバス 240ml', productNameENG: 'dailyAct hair & scalp bath 240ml', imageSource: '../../image/individual/dailyAct_hair_bath_240ml_F.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/7?salon_id=5'},
+      {productNameJP: 'デイリーユーズ　コンディショナー 240ml', productNameENG: 'frequent use conditioner 240ml', imageSource: '../../image/individual/dailyAct_conditioner_240ml.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/9?salon_id=5'},
+      {productNameJP: 'デイリーユーズ　ミスト 160ml', productNameENG: 'dailyAct phytoprotein mist 160ml', imageSource: '../../image/individual/dailyAct_phytoprotein.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/11?salon_id=5'}
+    ]
+  }
+});

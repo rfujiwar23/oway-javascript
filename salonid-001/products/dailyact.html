@@ -173,63 +173,31 @@
     <!-- <h1 class="logo"><span><a href="https://ifing-beauty.com/collections/oway-daily-act"><img src="../img/logo.svg" alt="ifing beautyのページへ飛ぶ"></a></span></h1> -->
 
 
-    <div class="product-list">
+    <div class="product-list" id="dailyAct">
       <p style="text-align: right">3 products</p>
       <div class="row">
 
 
-
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/7?salon_id=5">
-        <img src="../../image/individual/dailyAct_hair_bath_240ml_F.jpg" alt="dailyAct ヘアバス　240ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-25">
+        <div class="card col-md-4 col-sm-6" v-for="item in dailyItems">
+          <a v-bind:href="item.ifingUrl">
+          <img :src="item.imageSource" :alt="item.productNameJP" class="img-fluid">
+          </a>
+          <div class="card-header flex align-items-center justify-content-center h-25">
           <div class="card-title">
-            <h4>dailyAct hair & scalp bath 240ml</h4>
+            <h4>{{item.productNameENG}}</h4>
           </div>
           <div class="card-subtitle">
-            <p>デイリーユーズ　ヘアバス 240ml</p>
+              <p>{{item.productNameJP}}</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <a v-bind:href="item.ifingUrl">商品ページへ</a>
           </div>
         </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/7?salon_id=5">商品ページへ</a>
-        </div>
-      </div>
 
 
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/9?salon_id=5">
-          <img src="../../image/individual/dailyAct_conditioner_240ml.jpg" alt="dailyAct コンディショナー　240ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-25">
-          <div class="card-title">
-            <h4>frequent use conditioner 240ml</h4>
-          </div>
-          <div class="card-subtitle">
-            <p>デイリーユーズ　コンディショナー 240ml</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/9?salon_id=5">商品ページへ</a>
-        </div>
-      </div>
 
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/11?salon_id=5">
-        <img src="../../image/individual/dailyAct_phytoprotein.jpg" alt="dailyAct ヘアバス　240ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-25">
-        <div class="card-title">
-          <h4>dailyAct phytoprotein mist 160ml</h4>
-        </div>
-        <div class="card-subtitle">
-            <p>デイリーユーズ　ミスト 160ml</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/11?salon_id=5">商品ページへ</a>
-        </div>
-      </div>
+      
 
 
       </div>
@@ -256,7 +224,8 @@
 
 
 </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="../js/app.js"></script>
   <script src="../pages/products/js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="../pages/products/js/plugins.js"></script>
   <script src="../pages/products/js/main.js"></script>
