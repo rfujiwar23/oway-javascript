@@ -166,60 +166,26 @@
     </ul>
 
 
-    <div class="product-list">
+    <div class="product-list" id="moisturizing">
       <p style="text-align: right">3 products</p>
       <div class="row">
 
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/12?salon_id=5">
-        <img src="../../image/individual/moisturizing_hair_bath_240ml_F.jpg" alt="moisturizing hair bath　240ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-25">
-        <div class="card-title">
-          <h4>moisturizing hair bath 240ml</h4>
-        </div>
-        <div class="card-subtitle">
-            <p>モイスト ヘアバス 240ml</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/12?salon_id=5">商品ページへ</a>
-        </div>
-      </div>
-
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/15?salon_id=5">
-        <img src="../../image/individual/moisturizing_hair_mask_150ml.jpg" alt="moisturizing hair mask 150ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-25">
+        <div class="card col-md-4 col-sm-6" v-for="item in moistItems">
+          <a v-bind:href="item.ifingUrl">
+          <img :src="item.imageSource" :alt="item.productNameJP" class="img-fluid">
+          </a>
+          <div class="card-header flex align-items-center justify-content-center h-25">
           <div class="card-title">
-            <h4>moisturizing hair mask 150ml</h4>
+            <h4>{{item.productNameENG}}</h4>
           </div>
           <div class="card-subtitle">
-            <p>モイスト ヘアバス 150ml</p>
+              <p>{{item.productNameJP}}</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <a v-bind:href="item.ifingUrl">商品ページへ</a>
           </div>
         </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/15?salon_id=5">商品ページへ</a>
-        </div>
-      </div>
-
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/17?salon_id=5">
-        <img src="../../image/individual/moisturizing_hair_moisture_conditioner.jpg" alt="no rinse moist conditioner 160ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-25">
-          <div class="card-title">
-            <h4>no rinse moist conditioner 160ml</h4>
-          </div>
-          <div class="card-subtitle">
-            <p>ノンリンス モイスト ヘアバス 160ml</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/17?salon_id=5">商品ページへ</a>
-        </div>
-      </div>
 
       </div>
     </div>
@@ -238,7 +204,8 @@
 
 
 </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="../js/app.js"></script>
   <script src="../pages/products/js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="../pages/products/js/plugins.js"></script>
   <script src="../pages/products/js/main.js"></script>
