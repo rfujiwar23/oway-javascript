@@ -75,3 +75,21 @@ var vm = new Vue({
     ]
   }
 });
+
+var vm = new Vue({
+  el: '#men',
+  data: {
+    mensItems: [
+      {productNameJP: 'モイスト ヘアバス 240ml', productNameENG: 'moisturizing hair bath 240ml', imageSource: '../../image/individual/moisturizing_hair_bath_240ml_F.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/12?salon_id=5'},
+      {productNameJP: 'モイスト ヘアマスク 150ml', productNameENG: 'moisturizing hair mask 150ml', imageSource: '../../image/individual/moisturizing_hair_mask_150ml.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/15?salon_id=5'},
+      {productNameJP: 'ノンリンス モイスト ヘアバス 160ml', productNameENG: 'no rinse moist conditioner 160ml', imageSource: '../../image/individual/moisturizing_hair_moisture_conditioner.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/17?salon_id=5'},
+      {productNameJP: 'モイスト ヘアバス 240ml', productNameENG: 'moisturizing hair bath 240ml', imageSource: '../../image/individual/moisturizing_hair_bath_240ml_F.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/12?salon_id=5'},
+      {productNameJP: 'モイスト ヘアマスク 150ml', productNameENG: 'moisturizing hair mask 150ml', imageSource: '../../image/individual/moisturizing_hair_mask_150ml.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/15?salon_id=5'},
+      {productNameJP: 'ノンリンス モイスト ヘアバス 160ml', productNameENG: 'no rinse moist conditioner 160ml', imageSource: '../../image/individual/moisturizing_hair_moisture_conditioner.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/17?salon_id=5'},{productNameJP: 'モイスト ヘアバス 240ml', productNameENG: 'moisturizing hair bath 240ml', imageSource: '../../image/individual/moisturizing_hair_bath_240ml_F.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/12?salon_id=5'},
+      {productNameJP: 'モイスト ヘアマスク 150ml', productNameENG: 'moisturizing hair mask 150ml', imageSource: '../../image/individual/moisturizing_hair_mask_150ml.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/15?salon_id=5'},
+      {productNameJP: 'ノンリンス モイスト ヘアバス 160ml', productNameENG: 'no rinse moist conditioner 160ml', imageSource: '../../image/individual/moisturizing_hair_moisture_conditioner.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/17?salon_id=5'},
+      {productNameJP: 'ノンリンス モイスト ヘアバス 160ml', productNameENG: 'no rinse moist conditioner 160ml', imageSource: '../../image/individual/moisturizing_hair_moisture_conditioner.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/17?salon_id=5'},
+      {productNameJP: 'ノンリンス モイスト ヘアバス 160ml', productNameENG: 'no rinse moist conditioner 160ml', imageSource: '../../image/individual/moisturizing_hair_moisture_conditioner.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/17?salon_id=5'}
+    ]
+  }
+});
