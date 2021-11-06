@@ -15,10 +15,10 @@
   <link rel="manifest" href="../pages/products/site.webmanifest">
   <link rel="apple-touch-icon" href="../pages/products/icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link rel="icon" type="image/png" sizes="192x192"  href="../pages/img/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../pages/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="../pages/img/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../pages/img/favicon/favicon-16x16.png">
+  <link rel="icon" type="../image/png" sizes="192x192"  href="../pages/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="../image/png" sizes="32x32" href="../pages/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="../image/png" sizes="96x96" href="../pages/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="../image/png" sizes="16x16" href="../pages/img/favicon/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="../img/favicon//ms-icon-144x144.png">
@@ -95,7 +95,7 @@
   <!-- Add your site or application content here -->
   <!-- Navbar-->
    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="../index.html"><img src="../image/ifing_beauty_logo_white.png" alt="oway_logo" height="40" /></a>
+    <a class="navbar-brand" href="../index.html"><img src="../../image/ifing_beauty_logo_white.png" alt="oway_logo" height="40" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -155,11 +155,9 @@
         <a class="nav-link" href="rebuilding.html">rebuilding</a>
       </li>
       <li class="nav-item">
-        <!-- <a class="nav-link" href="sunway.html">SUNWAY</a> -->
         <a class="nav-link" href="../products/sunway/index.html">SUNWAY</a>
       </li>
       <li class="nav-item">
-        <!-- <a class="nav-link" href="infine.html">infine</a> -->
         <a class="nav-link" href="../products/infine/index.html">infine</a>
       </li>
       <li class="nav-item">
@@ -173,59 +171,24 @@
     <!-- <h1 class="logo"><span><a href="https://ifing-beauty.com/collections/oway-colorup"><img src="../img/logo.svg" alt="ifing beautyのページへ飛ぶ"></a></span></h1> -->
 
 
-    <div class="product-list">
-      <p style="text-align: right">5 products</p>
+    <div class="product-list" id="color">
+      <p style="text-align: right">3 products</p>
       <div class="row">
 
-        <div class="card col-md-4 col-sm-6">
-          <a href="https://ifing-beauty.com/products/detail/18">
-          <img src="../image/individual/color_protection_hair_bath_240ml.jpg" alt="dailyAct ヘアバス　240ml" class="img-fluid">
+        <div class="card col-md-4 col-sm-6" v-for="item in colorItems">
+          <a v-bind:href="item.ifingUrl">
+          <img :src="item.imageSource" :alt="item.productNameJP" class="img-fluid">
           </a>
           <div class="card-header flex align-items-center justify-content-center h-25">
-            <div class="card-title">
-              <h4>color protection hair bath 240ml</h4>
-            </div>
-            <div class="card-subtitle">
-            <p>カラープロテクション　ヘアバス 240ml</p>
+          <div class="card-title">
+            <h4>{{item.productNameENG}}</h4>
           </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/18">商品ページへ</a>
-        </div>
-        </div>
-
-        <div class="card col-md-4 col-sm-6">
-          <a href="https://ifing-beauty.com/products/detail/20">
-          <img src="../image/individual/color_protection_hair_mask_150ml.jpg" alt="color protection hair mask　150ml" class="img-fluid">
-          </a>
-          <div class="card-header flex align-items-center justify-content-center h-25">
-            <div class="card-title">
-              <h4>color protection hair mask 150ml</h4>
-            </div>
-            <div class="card-subtitle">
-            <p>カラープロテクション　ヘアマスク 150ml</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/20">商品ページへ</a>
-        </div>
-        </div>
-
-
-        <div class="card col-md-4 col-sm-6">
-          <a href="https://ifing-beauty.com/products/detail/22">
-          <img src="../image/individual/color_protection_veil_160ml.jpg" alt="color protection veil 160ml" class="img-fluid">
-          </a>
-          <div class="card-header flex align-items-center justify-content-center h-25">
-            <div class="card-title">
-              <h4>color protection veil 160ml</h4>
-            </div>
-            <div class="card-subtitle">
-            <p>カラープロテクション　ベール 160ml</p>
+          <div class="card-subtitle">
+              <p>{{item.productNameJP}}</p>
             </div>
           </div>
           <div class="card-body">
-            <a href="https://ifing-beauty.com/products/detail/22">商品ページへ</a>
+            <a v-bind:href="item.ifingUrl">商品ページへ</a>
           </div>
         </div>
 
@@ -248,7 +211,8 @@
 
 
 </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="../js/app.js"></script>
   <script src="../pages/products/js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="../pages/products/js/plugins.js"></script>
   <script src="../pages/products/js/main.js"></script>

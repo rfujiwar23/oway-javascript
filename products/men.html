@@ -15,10 +15,10 @@
   <link rel="manifest" href="../pages/products/site.webmanifest">
   <link rel="apple-touch-icon" href="../pages/products/icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link rel="icon" type="image/png" sizes="192x192"  href="../pages/img/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../pages/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="../pages/img/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../pages/img/favicon/favicon-16x16.png">
+  <link rel="icon" type="../image/png" sizes="192x192"  href="../pages/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="../image/png" sizes="32x32" href="../pages/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="../image/png" sizes="96x96" href="../pages/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="../image/png" sizes="16x16" href="../pages/img/favicon/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="../img/favicon//ms-icon-144x144.png">
@@ -95,7 +95,7 @@
   <!-- Add your site or application content here -->
   <!-- Navbar-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="../index.html"><img src="../image/ifing_beauty_logo_white.png" alt="oway_logo" height="40" /></a>
+    <a class="navbar-brand" href="../index.html"><img src="../../image/ifing_beauty_logo_white.png" alt="oway_logo" height="40" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -111,13 +111,6 @@
     </div>
     </nav>
 
-
-    <!-- Navbar-->
-
-
-
-
-
   <div class="product_banner men">
 
   <div class="inner">
@@ -127,8 +120,6 @@
   </div>
 
   <div class="productPage mainArea">
-
-
 
     <ul class="nav justify-content-center">
       <li class="nav-item">
@@ -181,194 +172,24 @@
 
     <!-- <h1 class="logo"><span><a href="https://ifing-beauty.com/collections/oway-sunway"><img src="../img/logo.svg" alt="ifing beautyのページへ飛ぶ"></a></span></h1> -->
 
-    <div class="product-list">
+    <div class="product-list" id="mens">
       <p style="text-align: right">11 products</p>
       <div class="row">
-        <!-- 1. face & beard hydrating cleanser -->
-        <div class="card col-md-4 col-sm-6">
-          <a href="https://ifing-beauty.com/products/detail/109">
-          <img src="../image/product_men/001_face-&-beard-hydrating-cleanser.png" alt="after-sun hair mask 500ml" class="img-fluid">
+
+        <div class="card col-md-4 col-sm-6" v-for="item in mensItems">
+          <a v-bind:href="item.ifingUrl">
+          <img :src="item.imageSource" :alt="item.productNameJP" class="img-fluid">
           </a>
           <div class="card-header flex align-items-center justify-content-center h-25">
-            <div class="card-title">
-              <h4>face & beard hydrating cleanser</h4>
-            </div>
-            <div class="card-subtitle">
-              <p>フェイス＆ビアード ハイドレイティング・クレンザー</p>
+          <div class="card-title">
+            <h4>{{item.productNameENG}}</h4>
+          </div>
+          <div class="card-subtitle">
+              <p>{{item.productNameJP}}</p>
             </div>
           </div>
           <div class="card-body">
-              <a href="https://ifing-beauty.com/products/detail/109">商品ページへ</a>
-          </div>
-        </div>
-        <!-- 2. softening shaving cream -->
-        <div class="card col-md-4 col-sm-6">
-          <a href="https://ifing-beauty.com/products/detail/112">
-          <img src="../image/product_men/002_softening-shave-cream.png" alt="softening shaving cream" class="img-fluid">
-          </a>
-          <div class="card-header flex align-items-center justify-content-center h-25">
-            <div class="card-title">
-              <h4>softening shaving cream</h4>
-            </div>
-            <div class="card-subtitle">
-              <p>ソフニング・シェイビング・クリーム</p>
-            </div>
-          </div>
-          <div class="card-body">
-              <a href="https://ifing-beauty.com/products/detail/112">商品ページへ</a>
-          </div>
-        </div>
-        <!-- 3. repairing aftershave balm -->
-        <div class="card col-md-4 col-sm-6">
-          <a href="https://ifing-beauty.com/products/detail/113">
-            <img src="../image/product_men/003_repairing-after-shave.png" alt="repairing aftershave balm" class="img-fluid">
-          </a>
-          <div class="card-header flex align-items-center justify-content-center h-25">
-            <div class="card-title">
-              <h4>repairing aftershave balm</h4>
-            </div>
-            <div class="card-subtitle">
-              <p>アフターシェイビング・バーム</p>
-            </div>
-          </div>
-          <div class="card-body">
-              <a href="https://ifing-beauty.com/products/detail/113">商品ページへ</a>
-          </div>
-        </div>
-        <!-- 4. face & eye energizing texture -->
-        <div class="card col-md-4 col-sm-6">
-          <a href="https://ifing-beauty.com/products/detail/110">
-          <img src="../image/product_men/006_face-&-eye-energizing-texture.png" alt="face & eye energizing texture" class="img-fluid">
-          </a>
-          <div class="card-header flex align-items-center justify-content-center h-25">
-            <div class="card-title">
-              <h4>face & eye energizing texture</h4>
-            </div>
-            <div class="card-subtitle">
-              <p>フェイス＆アイ エナジー・テクスチャー</p>
-            </div>
-          </div>
-          <div class="card-body">
-              <a href="https://ifing-beauty.com/products/detail/110">商品ページへ</a>
-          </div>
-        </div>
-        <!-- 5. Lip & Beard Salve -->
-        <div class="card col-md-4 col-sm-6">
-          <a href="https://ifing-beauty.com/products/detail/114">
-          <img src="../image/product_men/009_lip-&-beard.png" alt="Lip & Beard Salve" class="img-fluid">
-          </a>
-          <div class="card-header flex align-items-center justify-content-center h-25">
-            <div class="card-title">
-              <h4>Lip & Beard Salve</h4>
-            </div>
-            <div class="card-subtitle">
-              <p>リップ・ビアード・サルブ</p>
-            </div>
-          </div>
-          <div class="card-body">
-              <a href="https://ifing-beauty.com/products/detail/114">商品ページへ</a>
-          </div>
-        </div>
-        <!-- 6. hair & body invigorating wash -->
-        <div class="card col-md-4 col-sm-6">
-          <a href="https://ifing-beauty.com/products/detail/111">
-          <img src="../image/product_men/004_hair-and-body-invigorating-wash.png" alt="hair & body invigorating wash" class="img-fluid">
-          </a>
-          <div class="card-header flex align-items-center justify-content-center h-25">
-            <div class="card-title">
-              <h4>hair & body invigorating wash</h4>
-            </div>
-            <div class="card-subtitle">
-              <p>ヘア＆ボディ リフレッシング・ウォッシュ</p>
-            </div>
-          </div>
-          <div class="card-body">
-              <a href="https://ifing-beauty.com/products/detail/111">商品ページへ</a>
-          </div>
-        </div>
-        <!-- 7. water resin -->
-        <div class="card col-md-4 col-sm-6">
-          <a href="https://ifing-beauty.com/products/detail/105">
-          <img src="../image/product_men/011_water-resin.png" alt="water resin" class="img-fluid">
-          </a>
-          <div class="card-header flex align-items-center justify-content-center h-25">
-            <div class="card-title">
-              <h4>water resin</h4>
-            </div>
-            <div class="card-subtitle">
-              <p>ウォーター・レジン</p>
-            </div>
-          </div>
-          <div class="card-body">
-              <a href="https://ifing-beauty.com/products/detail/105">商品ページへ</a>
-          </div>
-        </div>
-        <!-- 8. raw mud -->
-        <div class="card col-md-4 col-sm-6">
-          <a href="https://ifing-beauty.com/products/detail/106">
-          <img src="../image/product_men/008_raw-mud.png" alt="dailyAct ヘアバス　240ml" class="img-fluid">
-          </a>
-          <div class="card-header flex align-items-center justify-content-center h-25">
-            <div class="card-title">
-              <h4>raw mud</h4>
-            </div>
-            <div class="card-subtitle">
-              <p>ロー・マッド</p>
-            </div>
-          </div>
-          <div class="card-body">
-              <a href="https://ifing-beauty.com/products/detail/106">商品ページへ</a>
-          </div>
-        </div>
-        <!-- 9. bungee fiber -->
-        <div class="card col-md-4 col-sm-6">
-          <a href="https://ifing-beauty.com/products/detail/107">
-            <img src="../image/product_men/010_bungee-fiber.png" alt="バンジー・ファイバー" class="img-fluid">
-          </a>
-          <div class="card-header flex align-items-center justify-content-center h-25">
-            <div class="card-title">
-              <h4>bungee fiber</h4>
-            </div>
-            <div class="card-subtitle">
-              <p>バンジー・ファイバー</p>
-            </div>
-          </div>
-          <div class="card-body">
-              <a href="https://ifing-beauty.com/products/detail/107">商品ページへ</a>
-          </div>
-        </div>
-        <!-- 10. nocturnal hair remedy -->
-        <div class="card col-md-4 col-sm-6">
-          <a href="https://ifing-beauty.com/products/detail/211">
-          <img src="../image/product_men/005_nocturnal-hair-remedy.png" alt="ノクターナル・ヘア・レメディl" class="img-fluid">
-          </a>
-          <div class="card-header flex align-items-center justify-content-center h-25">
-            <div class="card-title">
-              <h4>nocturnal hair remedy</h4>
-            </div>
-            <div class="card-subtitle">
-              <p>ノクターナル・ヘア・レメディ</p>
-            </div>
-          </div>
-          <div class="card-body">
-              <a href="https://ifing-beauty.com/products/detail/211">商品ページへ</a>
-          </div>
-        </div>
-        <!-- 11. silver steel hair bath -->
-        <div class="card col-md-4 col-sm-6">
-          <a href="https://ifing-beauty.com/products/detail/108">
-          <img src="../image/product_men/007_silver-steel-hair-bath.png" alt="after-sun hair mask 150ml" class="img-fluid">
-          </a>
-          <div class="card-header flex align-items-center justify-content-center h-25">
-            <div class="card-title">
-              <h4>silver steel hair bath</h4>
-            </div>
-            <div class="card-subtitle">
-              <p>シルバー・スティール・ヘアバス</p>
-            </div>
-          </div>
-          <div class="card-body">
-              <a href="https://ifing-beauty.com/products/detail/108">商品ページへ</a>
+            <a v-bind:href="item.ifingUrl">商品ページへ</a>
           </div>
         </div>
 
@@ -392,7 +213,8 @@
 
 
 </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="../js/app.js"></script>
   <script src="../pages/products/js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="../pages/products/js/plugins.js"></script>
   <script src="../pages/products/js/main.js"></script>

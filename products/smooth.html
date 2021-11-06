@@ -15,10 +15,10 @@
   <link rel="manifest" href="../pages/products/site.webmanifest">
   <link rel="apple-touch-icon" href="../pages/products/icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link rel="icon" type="image/png" sizes="192x192"  href="../pages/img/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../pages/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="../pages/img/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../pages/img/favicon/favicon-16x16.png">
+  <link rel="icon" type="../image/png" sizes="192x192"  href="../pages/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="../image/png" sizes="32x32" href="../pages/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="../image/png" sizes="96x96" href="../pages/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="../image/png" sizes="16x16" href="../pages/img/favicon/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="../img/favicon//ms-icon-144x144.png">
@@ -95,7 +95,7 @@
   <!-- Add your site or application content here -->
   <!-- Navbar-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="../index.html"><img src="../image/ifing_beauty_logo_white.png" alt="oway_logo" height="40" /></a>
+    <a class="navbar-brand" href="../index.html"><img src="../../image/ifing_beauty_logo_white.png" alt="oway_logo" height="40" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -168,113 +168,26 @@
 
     <!-- <h1 class="logo"><span><a href="https://ifing-beauty.com/collections/oway-smooth"><img src="../img/logo.svg" alt="ifing beautyのページへ飛ぶ"></a></span></h1> -->
 
-    <div class="product-list">
-      <p style="text-align: right">6 products</p>
+    <div class="product-list" id="smooth">
+      <p style="text-align: right">4 products</p>
       <div class="row">
 
-
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/36">
-        <img src="../image/individual/smoothing_fluid_100ml_F.jpg" alt="dailyAct ヘアバス　240ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-10">
+        <div class="card col-md-4 col-sm-6" v-for="smooth in smoothProducts">
+          <a v-bind:href="smooth.ifingUrl">
+          <img :src="smooth.imageSource" :alt="smooth.productNameJP" class="img-fluid">
+          </a>
+          <div class="card-header flex align-items-center justify-content-center h-25">
           <div class="card-title">
-            <h4>smoothing fluid 100ml</h4>
+            <h4>{{smooth.productNameENG}}</h4>
           </div>
           <div class="card-subtitle">
-            <p>ノンリンス スムージング フルイド 100ml</p>
+              <p>{{smooth.productNameJP}}</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <a v-bind:href="smooth.ifingUrl">商品ページへ</a>
           </div>
         </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/36">商品ページへ</a>
-        </div>
-      </div>
-
-
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/31">
-        <img src="../image/individual/smoothing_hair_bath_240ml_F.jpg" alt="smoothing hair bath 240ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-10">
-          <div class="card-title">
-            <h4>smoothing hair bath 240ml</h4>
-          </div>
-          <div class="card-subtitle">
-            <p>スムージング ヘアバス 240ml</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/31">商品ページへ</a>
-        </div>
-      </div>
-
-      <!-- <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/32">
-        <img src="../image/individual/smoothing_hair_bath_940ml.jpg" alt="smoothing hair bath 950ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-10">
-          <div class="card-title">
-            <h4>smoothing hair bath 950ml</h4>
-          </div>
-          <div class="card-subtitle">
-            <p>スムージング ヘアバス 950ml</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/32">商品ページへ</a>
-        </div>
-      </div> -->
-
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/33">
-        <img src="../image/individual/smoothing_conditioner_240ml_F.jpg" alt="smoothing conditioner 240ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-10">
-          <div class="card-title">
-            <h4>smoothing conditioner 240ml</h4>
-          </div>
-          <div class="card-subtitle">
-            <p>スムージング　コンディショナー 240ml</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/33">商品ページへ</a>
-        </div>
-      </div>
-
-      <!-- <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/34">
-        <img src="../image/individual/smoothing_conditioner_940ml.jpg" alt="smoothing conditioner 950ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-10">
-          <div class="card-title">
-            <h4>smoothing conditioner 950ml</h4>
-          </div>
-          <div class="card-subtitle">
-            <p>スムージング　コンディショナー 950ml</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/34">商品ページへ</a>
-        </div>
-      </div> -->
-
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/35">
-        <img src="../image/individual/smoothing_cream_150ml_F.jpg" alt="dailyAct コンディショナー　240ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-10">
-          <div class="card-title">
-            <h4>smoothing cream 150ml</h4>
-          </div>
-          <div class="card-subtitle">
-            <p>スムージング クリーム 150ml</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/35">商品ページへ</a>
-        </div>
-      </div>
 
   </div>
 </div>
@@ -296,6 +209,9 @@
 
 
 </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="../js/app.js"></script>
 
   <script src="../pages/products/js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="../pages/products/js/plugins.js"></script>
