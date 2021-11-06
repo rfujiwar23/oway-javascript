@@ -102,3 +102,23 @@ var vm = new Vue({
   }
 });
 
+// relife
+var vm = new Vue({
+  el: '#relife',
+  data: {
+    relifeItems: [
+      {id: 1, productNameJP: 'マイクロ・スティミュレイティング　ヘアバス', productNameENG: 'micro stimulating hair bath', imageSource: '../../image/scalp/01-microstimulating_hair_bath.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/199?salon_id=5'},
+      {id: 2, productNameJP: 'スージング・レメディ', productNameENG: 'soothing remedy', imageSource: '../../image/scalp/02-soothing_remedy.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/198?salon_id=5'},
+      {id: 3, productNameJP: 'スーシング・ヘア・バス', productNameENG: 'soothing hair bath', imageSource: '../../image/scalp/03-soothing_hair_bath.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/196?salon_id=5'},
+      {id: 4, productNameJP: 'セバム・バランス・ヘア・バス', productNameENG: 'sebum balance hair bath', imageSource: '../../image/scalp/04-sebum_balance_hair_bath.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/194?salon_id=5'},
+      {id: 5, productNameJP: 'ヘアロス レメディ', productNameENG: 'densifying remedy', imageSource: '../../image/scalp/05-densifying_remedy.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/201?salon_id=5'},
+      {id: 6, productNameJP: 'ダンドラフ レメディ オイリースカルプ', productNameENG: 'dandruff remedy oily scalps', imageSource: '../../image/scalp/06-dandruff_remedy_oily_scalps.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/213?salon_id=5'},
+      {id: 7, productNameJP: 'ダンドラフ ヘアバス オイリースカルプ', productNameENG: 'purifying hair bath oily scalps', imageSource: '../../image/scalp/07-purifying_hair_bath_oily_scalps.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/188?salon_id=5'},
+      {id: 8, productNameJP: 'ダンドラフ ダイナミックレメディ ドライスカルプ', productNameENG: 'dandruff remedy dry scalps', imageSource: '../../image/scalp/08-dandruff_remedy_dry_scalps.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/192?salon_id=5'},
+      {id: 9, productNameJP: 'ダンドラフ ヘアバス ドライスカルプ', productNameENG: 'purifying hair bath dry scalps', imageSource: '../../image/scalp/09_purifying_hair_bath_dry_scalps.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/191?salon_id=5'},
+      {id: 10, productNameJP: 'ヘアロス レメディ センシティブスカルプ', productNameENG: 'vivifying remedy sensitive scalps', imageSource: '../../image/scalp/10-vivifying_remedy_sensitive_scalp.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/202?salon_id=5'},
+    ]
+  }
+});
+
+

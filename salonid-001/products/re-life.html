@@ -169,188 +169,30 @@
 
     <!-- <h1 class="logo"><span><a href="https://ifing-beauty.com/collections/oway-sunway"><img src="../img/logo.svg" alt="ifing beautyのページへ飛ぶ"></a></span></h1> -->
 
-    <div class="product-list">
+    <div class="product-list" id="relife">
       <p style="text-align: right">10 products</p>
       <div class="row">
 
 
-      <!-- マイクロ・スティミュレイティング　ヘアバス -->
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/199?salon_id=5">
-          <img src="../../image/scalp/01-microstimulating_hair_bath.jpg" alt="マイクロ・スティミュレイティング　ヘアバス" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-25">
+        <div class="card col-md-4 col-sm-6" v-for="item in relifeItems">
+          <a v-bind:href="item.ifingUrl">
+          <img :src="item.imageSource" :alt="item.productNameJP" class="img-fluid">
+          </a>
+          <div class="card-header flex align-items-center justify-content-center h-25">
           <div class="card-title">
-            <h4>micro stimulating hair bath</h4>
+            <h4>{{item.productNameENG}}</h4>
           </div>
           <div class="card-subtitle">
-            <p>マイクロ・スティミュレイティング　ヘアバス</p>
+              <p>{{item.productNameJP}}</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <a v-bind:href="item.ifingUrl">商品ページへ</a>
           </div>
         </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/199?salon_id=5">商品ページへ</a>
-        </div>
-      </div>
 
-      <!-- スージング・レメディ -->
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/198?salon_id=5">
-        <img src="../../image/scalp/02-soothing_remedy.jpg" alt="スージング・レメディ" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-25">
-          <div class="card-title">
-            <h4>soothing remedy</h4>
-          </div>
-          <div class="card-subtitle">
-            <p>スージング・レメディ</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/198?salon_id=5">商品ページへ</a>
-        </div>
-      </div>
 
-      <!-- soothing hair bath -->
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/196?salon_id=5">
-        <img src="../../image/scalp/03-soothing_hair_bath.jpg" alt="soothing hair bath" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-25">
-          <div class="card-title">
-            <h4>soothing hair bath</h4>
-          </div>
-          <div class="card-subtitle">
-            <p>スーシング・ヘア・バス</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/196?salon_id=5">商品ページへ</a>
-        </div>
-      </div>
-
-      <!-- sebum balance hair bath -->
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/194?salon_id=5">
-        <img src="../../image/scalp/04-sebum_balance_hair_bath.jpg" alt="sebum balance hair bath" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-25">
-          <div class="card-title">
-            <h4>sebum balance hair bath</h4>
-          </div>
-          <div class="card-subtitle">
-            <p>セバム・バランス・ヘア・バス</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/194?salon_id=5">商品ページへ</a>
-        </div>
-      </div>
-
-      <!-- densifying remedy -->
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/201?salon_id=5">
-        <img src="../../image/scalp/05-densifying_remedy.jpg" alt="after-sun hair mask 150ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-25">
-          <div class="card-title">
-            <h4>densifying remedy</h4>
-          </div>
-          <div class="card-subtitle">
-            <p>ヘアロス レメディ</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/201?salon_id=5">商品ページへ</a>
-        </div>
-      </div>
-
-      <!-- dandruff remedy oily scalps -->
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/192?salon_id=5">
-        <img src="../../image/scalp/06-dandruff_remedy_oily_scalps.jpg" alt="after-sun hair mask 500ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-25">
-          <div class="card-title">
-            <h4>dandruff remedy oily scalps</h4>
-          </div>
-          <div class="card-subtitle">
-            <p>ダンドラフ レメディ オイリースカルプ</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/192?salon_id=5">商品ページへ</a>
-        </div>
-      </div>
-
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/188?salon_id=5">
-        <img src="../../image/scalp/07-purifying_hair_bath_oily_scalps.jpg" alt="ダンドラフ ヘアバス オイリースカルプ" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-25">
-          <div class="card-title">
-            <h4>purifying hair bath oily scalps</h4>
-          </div>
-          <div class="card-subtitle">
-            <p>ダンドラフ ヘアバス オイリースカルプ</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/188?salon_id=5">商品ページへ</a>
-        </div>
-      </div>
-
-      <!-- dandruff remedy dry scalps -->
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/192?salon_id=5">
-        <img src="../../image/scalp/08-dandruff_remedy_dry_scalps.jpg" alt="sun protective elixir 100ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-25">
-          <div class="card-title">
-            <h4>dandruff remedy dry scalps</h4>
-          </div>
-          <div class="card-subtitle">
-            <p>ダンドラフ ダイナミックレメディ ドライスカルプ</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/192?salon_id=5">商品ページへ</a>
-        </div>
-      </div>
-
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/191?salon_id=5">
-        <img src="../../image/scalp/09_purifying_hair_bath_dry_scalps.jpg" alt="dailyAct ヘアバス　240ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-25">
-          <div class="card-title">
-            <h4>purifying hair bath dry scalps</h4>
-          </div>
-          <div class="card-subtitle">
-            <p>ダンドラフ ヘアバス ドライスカルプ</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/191?salon_id=5">商品ページへ</a>
-        </div>
-      </div>
-
-      <!-- vivifying remedy sensitive scalps -->
-      <div class="card col-md-4 col-sm-6">
-        <a href="https://ifing-beauty.com/products/detail/202?salon_id=5">
-        <img src="../../image/scalp/10-vivifying_remedy_sensitive_scalp.jpg" alt="after-sun hair & body bath 950ml" class="img-fluid">
-        </a>
-        <div class="card-header flex align-items-center justify-content-center h-25">
-          <div class="card-title">
-            <h4>vivifying remedy sensitive scalps</h4>
-          </div>
-          <div class="card-subtitle">
-            <p>ヘアロス レメディ センシティブスカルプ</p>
-          </div>
-        </div>
-        <div class="card-body">
-          <a href="https://ifing-beauty.com/products/detail/202?salon_id=5">商品ページへ</a>
-        </div>
-      </div>
+      
 
     <!-- <a href="#"><img src="../img/pg_top.png" alt="製品ナビゲーションへ" class="pg_top"></a> -->
   </div>
@@ -373,7 +215,8 @@
 
 
 </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="../js/app.js"></script>
   <script src="../pages/products/js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="../pages/products/js/plugins.js"></script>
   <script src="../pages/products/js/main.js"></script>
