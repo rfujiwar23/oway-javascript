@@ -40,7 +40,7 @@ var vm = new Vue({
   data: {
     items: [
       {productNameJP: 'ボリューム　ヘアバス 240ml', productNameENG: 'volumizing hair bath 240ml', imageSource: '../../image/individual/volumizing_hair_bath_240ml.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/23?salon_id=5'},
-      {productNameJP: 'ボリューム　ルーツスプレー 160ml', productNameENG: 'volumizing root spray 160ml', imageSource: '../../image/individual/volumizing_hair_bath_240ml.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/25?salon_id=5'}
+      {productNameJP: 'ボリューム　ルーツスプレー 160ml', productNameENG: 'volumizing root spray 160ml', imageSource: '../../image/individual/volumizing_root_spray_160ml_F.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/25?salon_id=5'}
     ]
   }
 });
