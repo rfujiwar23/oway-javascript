@@ -121,4 +121,19 @@ var vm = new Vue({
   }
 });
 
-
+var vm = new Vue({
+  el: '#lifestyleProducts',
+  data: {
+    products: [
+      // { id: 1, productNameJP: 'ルジャータ（50ml）', productNameENG: 'rugiata（50ml）', imageSource: '../../image/dog/lifestyle004-rugiada.png', ifingUrl: 'https://ifing-beauty.com/products/detail/316' },
+      // { id: 2, productNameJP: 'ネブラ（50ml）', productNameENG: 'nebula（50ml）', imageSource: '../../image/dog/lifestyle005-nebula.png', ifingUrl: 'https://ifing-beauty.com/products/detail/317' },
+      // { id: 3, productNameJP: 'ブルーマ（100ml）', productNameENG: 'bruma（100ml）', imageSource: '../../image/dog/lifestyle006-bruma.png', ifingUrl: 'https://ifing-beauty.com/products/detail/315' },
+      // { id: 4, productNameJP: 'テルソ（240ml）', productNameENG: 'terso（240ml）', imageSource: '../../image/dog/lifestyle007-terso.png', ifingUrl: 'https://ifing-beauty.com/products/detail/318' },
+      // { id: 5, productNameJP: 'プロディジャスバーム（25ml）', productNameENG: 'Prodigious （25ml）', imageSource: '../../image/dog/lifestyle008-prodigious-balm.png', ifingUrl: 'https://ifing-beauty.com/products/detail/319' },
+      { id: 6, productNameJP: 'レメディ ハンドバーム 50ml', productNameENG: 'Remedy Hand Balm 50ml', imageSource: '../../image/dog/lifestyle003-remedy-hand-balm.png', ifingUrl: 'https://ifing-beauty.com/products/detail/306' },
+      { id: 7, productNameJP: 'ヴェルート (リップクリーム) 10ml', productNameENG: 'Velluto (Lip Cream) 10ml', imageSource: '../../image/dog/lifestyle002-Velluto.png', ifingUrl: 'https://ifing-beauty.com/products/detail/307' },
+      { id: 8, productNameJP: 'デュエット 160ml', productNameENG: 'Duetto 240ml', imageSource: '../../image/dog/Duetto-01.jpg', ifingUrl: 'https://ifing-beauty.com/products/detail/212' },
+      { id: 9, productNameJP: 'テロ', productNameENG: 'Telo', imageSource: '../../image/dog/lifestyle001-telo.png', ifingUrl: 'https://ifing-beauty.com/products/detail/308' },
+    ]
+  }
+});

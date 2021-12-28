@@ -1,0 +1,212 @@
+.product_banner {
+  margin: 0 auto;
+  background-size: cover;
+  /*background-position: center top;*/
+  padding:20vh 0;
+}
+
+.moisturizing {
+  background:url("../image/product/prod006-moisturizing.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.dailyAct {
+  background:url("../image/product/prod005-dailyAct.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.beCurly {
+  background:url("../image/product/prod003-beCurly.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.colorUp {
+  background:url("../image/product/prod002-colorUp.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.infine {
+  background:url("../image/product/prod014-infine.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hblond {
+  background:url("../image/product/prod013-hblonde.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.moisturizing {
+  background:url("../image/product/prod006-moisturizing.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.rebuilding {
+  background:url("../image/product/prod007-rebuilding.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.silkglow {
+  background:url("../image/product/prod004-silkglow.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.smooth {
+  background:url("../image/product/prod009-smooth.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.sunway {
+  background:url("../image/product/prod001-sunway.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.xVolume {
+  background:url("../image/product/prod008-xVolume.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.men {
+  background:url("../image/product/prod012-men.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.re-life {
+  background:url("../image/product/prod011-relife.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.dog {
+  background:url("../image/product/prod010-duetto.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product_banner .inner {
+  text-align: center;
+}
+
+.product_banner .inner h1 span {
+  /*background: #fff;*/
+  padding:5px 10px;
+  font-family: 'Helvetica', sans-serif;
+ /* box-shadow: 2px 3px 6px #9a9a9a;*/
+  font-weight:bold;
+  color:white;
+  text-shadow:1px 3px 6px #9a9a9a;
+}
+
+.productPage .nav {
+  padding:20px 0;
+}
+
+.productPage .nav .active {
+  color:#3E4551;
+  font-weight: bold;
+  border-bottom: 3px #3E4551 solid;
+}
+
+.productPage .nav .nav-link:hover {
+  color: white;
+  background:#3E4551;
+}
+
+.productPage h1.logo {
+  width:30%;
+  margin:10px auto 3vh;
+}
+
+
+.productPage .product-list {
+  /*background:red;*/
+  padding:20px;
+}
+
+.productPage .product-list h4 {
+  font-size:20px;
+  margin-top:5px;
+}
+
+.productPage .product-list h5 {
+  font-size:20px;
+}
+
+.productPage .product-list h5 span {
+  padding-bottom: 3px;
+  border-bottom:1px solid #000;
+}
+
+.productPage .product-list p {
+  font-size:13px;
+  padding-left:15px;
+}
+
+.productPage .product-list .card {
+  margin-bottom:5px;
+}
+
+.duetto {
+  margin:5vh auto 3vh;
+}
+
+
+.footer {
+  background:#1a2228;
+}
+
+.footer p a, .footer p {
+  color:white;
+  font-size:0.8em;
+  text-align: right;
+  padding-right:30px;
+}
+
+.footer p a {
+  color:white;
+  text-decoration: none;
+}
+
+.footer p a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 575.98px) {
+  .pg_top {
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+  }
+
+  .duetto h1 {
+    font-size:24px;
+  }
+
+  .duetto h2 {
+    font-size:20px;
+  }
+
+  .duetto h3 {
+    font-size:16px;
+  }
+
+  .duetto .text, .duetto-img {
+    margin-top:2vh;
+  }
+
+
+}
