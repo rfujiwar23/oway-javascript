@@ -128,7 +128,7 @@ var vm = new Vue({
       // life-style
       { id: 4, productNameJP: 'テルソ（240ml）', productNameENG: 'terso（240ml）', imageSource: '../../../image/dog/lifestyle007-terso.png', ifingUrl: 'https://ifing-beauty.com/products/detail/318?salon_id=4861' },
       { id: 2, productNameJP: 'ネブラ（50ml）', productNameENG: 'nebula（50ml）', imageSource: '../../../image/dog/lifestyle005-nebula.png', ifingUrl: 'https://ifing-beauty.com/products/detail/317?salon_id=4861' },
-      { id: 1, productNameJP: 'ルジャータ（50ml）', productNameENG: 'rugiata（50ml）', imageSource: '../../../image/dog/lifestyle004-rugiada.png', ifingUrl: 'https://ifing-beauty.com/products/detail/316?salon_id=4861' },
+      { id: 1, productNameJP: 'ルジャーダ（50ml）', productNameENG: 'rugiada（50ml）', imageSource: '../../../image/dog/lifestyle004-rugiada.png', ifingUrl: 'https://ifing-beauty.com/products/detail/316?salon_id=4861' },
       { id: 3, productNameJP: 'ブルーマ（100ml）', productNameENG: 'bruma（100ml）', imageSource: '../../../image/dog/lifestyle006-bruma.png', ifingUrl: 'https://ifing-beauty.com/products/detail/315?salon_id=4861' },
      
     ]
