@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>【公認】OWAY オーウェイ ライフスタイル | Duetto デュエット</title>
+  <title>【公認】OWAY オーウェイ ライフスタイル </title>
   <meta name="description" content="1948年にイタリアのボローニャで創立、現在70カ国でオーウェイの商品を展開。世界で指示が一番熱い、世界観を非常に大切としているブランド。">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Place favicon.ico in the root directory -->
@@ -132,29 +132,176 @@
         </div>
       </div>
 
-      <!-- <div class="duetto row">
-              <div class="col-lg-8 col-md-6 col-sm-12">
-                <div class="product-info">
-                  <div class="youTube-video">
-                  </div>
-                  <div class="text">
-                    <h1>duetto</h1>
-                    <h2>デュエット</h2>
-                    <h3>オーナーとパートナーのためのヒーリング・バス</h3>
-                    <p>OWAYはオーナー（貴方）とパートナー（愛犬）のために、新しいオーガニックライフ・スタイルを充実させる「Duetto（デュエット）」を発売。パートナーの毛や皮膚に栄養を与えながら清潔にし、オーナーも一緒に楽しめる植物由来のオーガニック・バス（シャンプー）。お互いのスキンシップは、深い絆を生み、共に過ごす時間はさらに愛溢れるものとなるでしょう。</p>
+      <div class="duetto-1">
+        <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12">
+          <div class="product-info">
+            <div class="text">
+              <h1>hands routine</h1>
+              <h2>ハンズ・ルーティン</h2>
+              <!-- <h3>オーナーとパートナーのためのヒーリング・バス</h3> -->
+              <div class="row mt-4">
+                <div class="col-lg-6 col-md-12">
+                  <p>
+                    OWAY から待望の「hands routine」(ハンズ・ルーティン)、オーガニック
+                    ハンドケアライン4アイテム登場。バイオダイナミック栽培のパワフルな活性成分やOWAY
+                    オリジナル植物性のエモリエントコンプレックスが働きかけ手指を美しくします。
+                    また官能的なスパイス、柑橘、セージなどが生み出す“香りのブーケ”が多幸感溢れる
+                    時間をお約束。「手」というパーツをあらゆるアプローチにより価値を高めた新シリーズです。
+                    ラインナップは、ネイルケアもできるエモリエントハンドバーム、
+                    爽やかでリフレッシュの波がおしよせるアロマティックハンドスプレー
+                    (高濃度アルコール含有)、モイスチャー効果が高くなめらかな手肌に整える
+                    美容液タイプのハンドセラム、保湿とバリア機能を守るミセラーテクノロジーの
+                    デリケート・ソープ。(全て天然由来成分99%以上)
+                  </p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="row mx-0 p-0">
+                    <div class="col-6 mx-0 p-0"><img src="../../image/pages-img/lifestyle/handsroutine-1.jpg" alt="hands routine" class="img-fluid"></div>
+                    <div class="col-6 mx-0 p-0"><img src="../../image/pages-img/lifestyle/handsroutine-2.jpg" alt="hands routine" class="img-fluid"></div>
                   </div>
                 </div>
               </div>
-              <div class="duetto-img col-lg-4 col-md-6 col-sm-12">
-                <img src="../../image/dog/Duetto-01.jpg" alt="Duetto" class="img-fluid">
-              </div>
-            </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
       <div class="product-list" id="lifestyleProducts">
         <p style="text-align: right">{{products.length}} Products</p>
         <div class="row">
 
-          <div class="card col-md-4 col-sm-6" v-for="product in products">
+          <div class="card col-xl-3 col-lg-4 col-md-6 col-sm-6" v-for="product in products">
+            <a v-bind:href="product.ifingUrl">
+              <img :src="product.imageSource" :alt="product.productNameJP" class="img-fluid">
+            </a>
+            <div class="card-header flex align-items-center justify-content-center h-25">
+              <div class="card-title">
+                <h4>{{product.productNameENG}}</h4>
+              </div>
+              <div class="card-subtitle">
+                <p>{{product.productNameJP}}</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <a v-bind:href="product.ifingUrl">商品ページへ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="duetto-1">
+        <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12">
+          <div class="product-info">
+            <div class="text">
+              <h1>prodigious balm</h1>
+              <h2>プロディジャス・バーム</h2>
+              <!-- <h3>オーナーとパートナーのためのヒーリング・バス</h3> -->
+              <div class="row mt-4">
+                <div class="col-lg-6">
+                  <p>
+                    新製品の「Prodigious balm」はオールインワンSOS的な存在のバーム。
+                    唇はもちろん、顔、手、爪など気になる箇所をケアします。
+                    OWAYならではの活性成分が豊富で、バイオダイナミック・マリーコールド、
+                    オーガニックサンフラワーシー ドオイルをはじめエモリエント効果たっぷりで
+                    肌の表面だけでなく内側からうるおいます。
+                    温度変化で乾燥やセンシティブに傾いたとき、保湿がほしいときなど、
+                    ストレスフリーなデイリーケアをサポート。
+                  </p>
+                </div>
+                <div class="col-lg-6">
+                  
+                  <div class="row mx-0 p-0">
+                    <div class="col-6 mx-0 p-0"><img src="../../image/pages-img/lifestyle/lifestyle001.png" alt="hands routine" class="img-fluid"></div>
+                    <div class="col-6 mx-0 p-0"><img src="../../image/pages-img/lifestyle/lifestyle002.png" alt="hands routine" class="img-fluid"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-list" id="balm">
+        <p style="text-align: right">{{products.length}} Products</p>
+        <div class="row">
+          <div class="card col-xl-3 col-lg-4 col-md-6 col-sm-6" v-for="product in products">
+            <a v-bind:href="product.ifingUrl">
+              <img :src="product.imageSource" :alt="product.productNameJP" class="img-fluid">
+            </a>
+            <div class="card-header flex align-items-center justify-content-center h-25">
+              <div class="card-title">
+                <h4>{{product.productNameENG}}</h4>
+              </div>
+              <div class="card-subtitle">
+                <p>{{product.productNameJP}}</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <a v-bind:href="product.ifingUrl">商品ページへ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-list" id="other">
+        <p style="text-align: right">{{products.length}} Products</p>
+        <div class="row">
+          <div class="card col-xl-3 col-lg-4 col-md-6 col-sm-6" v-for="product in products">
+            <a v-bind:href="product.ifingUrl">
+              <img :src="product.imageSource" :alt="product.productNameJP" class="img-fluid">
+            </a>
+            <div class="card-header flex align-items-center justify-content-center h-25">
+              <div class="card-title">
+                <h4>{{product.productNameENG}}</h4>
+              </div>
+              <div class="card-subtitle">
+                <p>{{product.productNameJP}}</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <a v-bind:href="product.ifingUrl">商品ページへ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="duetto-1">
+        <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12">
+          <div class="product-info">
+            <div class="text">
+              <h1>duetto</h1>
+              <h2>デュエット</h2>
+              <div class="row mt-4">
+                <div class="col-lg-6">
+                  <p>
+                    OWAYはオーナー（貴方）とパートナー（愛犬）のために、新しいオーガニックライフ・スタイルを充実させる「Duetto（デュエット）」を発売。パートナーの毛や皮膚に栄養を与えながら清潔にし、オーナーも一緒に楽しめる植物由来のオーガニック・バス（シャンプー）。お互いのスキンシップは、深い絆を生み、共に過ごす時間はさらに愛溢れるものとなるでしょう。
+                  </p>
+                </div>
+                <div class="col-lg-6">
+                  
+                  <div class="row mx-0 p-0">
+                    <div class="col-6 mx-0 p-0"><img src="../../image/dog/Duetto-03.jpg" alt="duetto" class="img-fluid"></div>
+                    <div class="col-6 mx-0 p-0"><img src="../../image/dog/Duetto-05.jpg" alt="duetto" class="img-fluid"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- <h3>オーナーとパートナーのためのヒーリング・バス</h3> -->
+              <!-- <p>OWAYはオーナー（貴方）とパートナー（愛犬）のために、新しいオーガニックライフ・スタイルを充実させる「Duetto（デュエット）」を発売。パートナーの毛や皮膚に栄養を与えながら清潔にし、オーナーも一緒に楽しめる植物由来のオーガニック・バス（シャンプー）。お互いのスキンシップは、深い絆を生み、共に過ごす時間はさらに愛溢れるものとなるでしょう。</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="product-list" id="dog">
+        <p style="text-align: right">{{products.length}} Products</p>
+        <div class="row">
+          <div class="card col-xl-3 col-lg-4 col-md-6 col-sm-6" v-for="product in products">
             <a v-bind:href="product.ifingUrl">
               <img :src="product.imageSource" :alt="product.productNameJP" class="img-fluid">
             </a>
