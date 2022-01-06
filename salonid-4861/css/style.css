@@ -67,7 +67,7 @@ html {
 .jumbotron {
   height: calc(100vh - 60px);
   /*min-height: 500px;*/
-  background-image: url('../image/sect-bg/000-main-background.jpg');
+  background-image: url('../../image/sect-bg/000-main-background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,0 +1,119 @@
+    html, body { height:100%; }
+    body {
+      background:url('../image/sect-bg/bg000.jpg') no-repeat;
+      background-size: cover;
+    }
+
+    .logo {width:200px;}
+    .left {background:rgba(255,255,255,0.8); box-shadow: 3px 6px 10px #9a9a8a;height: calc(100vh - 60px); overflow-y: scroll;font-family: "Montserrat", "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Roboto, "Droid Sans", sans-serif;}
+    .right {height:calc(100vh - 60px); padding:40px 0; background: rgba(120,180,200, 0.7); overflow-y: scroll;}
+    .right h4 {text-align: center; margin-top:40px;}
+    .right .inner {
+      width:90%;
+      margin:0 auto;
+    }
+    .right .notice {font-size:0.8em;text-align:center;padding:20px;}
+    .right .red {color:#f00;}
+    .right .try-again .btn {width:100%; margin:2vh auto;}
+    .questionnaire {}
+    .box{color: #000; padding: 20px; display: none; margin-top: 20px;}
+    .box h2, .product h2 {font-size:0.8em;}
+    .product h4, .box h4 {text-align:left; font-size:0.8em;}
+    .yes-color{ border: 1px solid #9a9a9a; background:#fff; }
+    .yes-perm{ border: 1px solid #9a9a9a; background:#fff; }
+    .gray-hair{ border: 1px solid #9a9a9a; background:#fff; }
+    .uv-chlorine{ border: 1px solid #9a9a9a; background:#fff; }
+    #div1 {border: 1px solid #9a9a9a; background:#fff;}
+    #div2 {border: 1px solid #9a9a9a; background:#fff;}
+    #div3 {border: 1px solid #9a9a9a; background:#fff;}
+    #div4 {border: 1px solid #9a9a9a; background:#fff;}
+    #div5 {border: 1px solid #9a9a9a; background:#fff;}
+    #div6 {border: 1px solid #9a9a9a; background:#fff;}
+    #div7 {border: 1px solid #9a9a9a; background:#fff;}
+    #div8 {border: 1px solid #9a9a9a; background:#fff;}
+    #div9 {border: 1px solid #9a9a9a; background:#fff;}
+    #div10 {border: 1px solid #9a9a9a; background:#fff;}
+    #div11 {border: 1px solid #9a9a9a; background:#fff;}
+    #div12 {border: 1px solid #9a9a9a; background:#fff;}
+    .hide {display:none;}
+    .product {color:#000; margin-top: 20px; padding: 20px;
+    display: none;}
+    /*.try-again {margin:2vh auto;}*/
+
+    #generate {width:90%; margin:0 auto;}
+
+
+    .disp-smartphone {
+      display:none;
+    }
+
+
+    label{ margin-right: 15px; }
+    /*.product {background:#ffcc00; padding:20px; margin-top: 20px;}*/
+    section {margin:20px auto; padding:20px 0; border-top:1px solid #9a9a9a;}
+    section h3 {font-size:1em;}
+    section .answers {margin-left:20px;font-size:0.9em;}
+    .show {display:none;}
+
+    .go-back-to-index {
+      /*border:1px solid #9a9a9a;*/
+      /*background:rgba(255,255,255,0.8);*/
+      text-align: center;
+      padding:10px 0;
+      /*border-radius:5px;*/
+    }
+
+    .go-back-to-index .btn {
+      width: 95%;
+    }
+
+    .go-back-to-index a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .go-back-to-index a span {
+      font-size:0.8em;
+    }
+
+    .go-back-to-index .btn:hover {
+      font-weight:bold;
+      box-shadow: 3px 3px 6px #9a9a9a;
+    }
+
+    .btn-link {
+      text-align: center;
+      font-size:0.9em;
+      text-decoration: none;
+    }
+
+    .br_off {
+      display:block;
+    }
+
+
+@media screen and (min-width: 768px) {
+    .box h2, .product h2 {font-size:1em;}
+    .br_off {display:none;}
+
+}
+
+@media screen and (max-width:767px) {
+  .right .red {display: none;}
+}
+
+
+@media screen and (max-width: 567px) {
+    .disp-smartphone {
+      display:block;
+      padding:4vh 0;
+      /*background:red;*/
+      width:100%;
+    }
+
+    .disp-smartphone h3 {
+      text-align:center;
+    }
+}
+
+
